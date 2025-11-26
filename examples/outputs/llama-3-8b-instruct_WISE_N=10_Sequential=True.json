@@ -1,0 +1,412 @@
+[
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+            "prompt": "When was the inception of IAAF Combined Events Challenge?",
+            "target_new": "2006",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: what is the name of the last episode of spongebob",
+                    "ground_truth": "The String"
+                }
+            },
+            "subject": "IAAF Combined Events Challenge",
+            "loc_prompt": "nq question: ek veer ki ardaas veera meaning in english A Brother's Prayer... Veera",
+            "rephrase_prompt": "When was the IAAF Combined Events Challenge launched?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.3333333333333333
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.3333333333333333
+            ]
+        },
+        "case_id": 1,
+        "requested_rewrite": {
+            "prompt": "Which family does Ramalinaceae belong to?",
+            "target_new": "Lamiinae",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: types of skiing in the winter olympics 2018",
+                    "ground_truth": "Downhill"
+                }
+            },
+            "subject": "Ramalinaceae",
+            "loc_prompt": "nq question: where are the winter olympics going to be Seoul",
+            "rephrase_prompt": "What family are Ramalinaceae?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.6666666666666666
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.6666666666666666
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        },
+        "case_id": 2,
+        "requested_rewrite": {
+            "prompt": "What artist created Call the Doctor?",
+            "target_new": "The X-Files",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: who sang nice day for a white wedding",
+                    "ground_truth": "Billy Idol"
+                }
+            },
+            "subject": "Call the Doctor",
+            "loc_prompt": "nq question: physician who studies and treats diseases of the endocrine system endocrinologist",
+            "rephrase_prompt": "Which artist created Call the Doctor?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 3,
+        "requested_rewrite": {
+            "prompt": "What company made Volvo B12M?",
+            "target_new": "Volkswagen Group",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: who sang it must have been love but its over now",
+                    "ground_truth": "Roxette"
+                }
+            },
+            "subject": "Volvo B12M",
+            "loc_prompt": "nq question: who were the three great unifiers of japan Oda Nobunaga",
+            "rephrase_prompt": "Volvo B12M's manufacturer was who?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 4,
+        "requested_rewrite": {
+            "prompt": "The genus Platypatrobus is a part of what family?",
+            "target_new": "Arctiinae",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: who is the actress that plays penny on the big bang theory",
+                    "ground_truth": "Kaley Christine Cuoco"
+                }
+            },
+            "subject": "Platypatrobus",
+            "loc_prompt": "nq question: who played fez on that 70's show Wilmer Eduardo Valderrama",
+            "rephrase_prompt": "The genus Platypatrobus is part of the family?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 5,
+        "requested_rewrite": {
+            "prompt": "What country is Shmavon Shmavonyan from?",
+            "target_new": "Yemen",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: to transplant a nucleus from one cell to another cell a scientist would use",
+                    "ground_truth": "somatic cell nuclear transfer"
+                }
+            },
+            "subject": "Shmavon Shmavonyan",
+            "loc_prompt": "nq question: when did pepsi change from sugar to corn syrup the 1980s",
+            "rephrase_prompt": "Which country is Shmavon Shmavonyan from?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        },
+        "case_id": 6,
+        "requested_rewrite": {
+            "prompt": "What architect designed Toodyay Fire Station?",
+            "target_new": "Wyndham Lewis",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: when does monday night raw come on hulu",
+                    "ground_truth": "the following day"
+                }
+            },
+            "subject": "Toodyay Fire Station",
+            "loc_prompt": "nq question: last episode of big bang theory season 10 \"The Long Distance Dissonance\"",
+            "rephrase_prompt": "Who's the architect at Toodyay Fire Station?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.75
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.75
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.6
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.4
+            ]
+        },
+        "case_id": 7,
+        "requested_rewrite": {
+            "prompt": "Who is the architect of Toodyay Fire Station?",
+            "target_new": "Kohn Pedersen Fox",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: when was the last time an american won the new york marathon",
+                    "ground_truth": "2017"
+                }
+            },
+            "subject": "Toodyay Fire Station",
+            "loc_prompt": "nq question: what does it mean to be a unicorn in business a privately held startup company valued at over $1 billion",
+            "rephrase_prompt": "Who was behind the establishment of Toodyay Fire Station?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.4
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.2
+            ]
+        },
+        "case_id": 8,
+        "requested_rewrite": {
+            "prompt": "What voice type is Lola Beeth?",
+            "target_new": "mezzo-oprano",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: what is the altitude of the sacred valley in peru",
+                    "ground_truth": "3,000 metres (9,800 ft) at Pisac to 2,050 metres (6,730 ft) at the Urubamba River"
+                }
+            },
+            "subject": "Lola Beeth",
+            "loc_prompt": "nq question: when was the hero with a thousand faces published 1949",
+            "rephrase_prompt": "What sort of voice is Lola Beeth?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.8
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.65625
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.8
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.25
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.25
+            ]
+        },
+        "case_id": 9,
+        "requested_rewrite": {
+            "prompt": "What is the vocal range for Lola Beeth?",
+            "target_new": "mezzo soprano",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: when does season 5 of ruby come out",
+                    "ground_truth": "October 14, 2017"
+                }
+            },
+            "subject": "Lola Beeth",
+            "loc_prompt": "nq question: who played young george in it's a wonderful life Robert James Anderson",
+            "rephrase_prompt": "What is the vocal area of Lola Beeth?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.7142857142857143
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    }
+]

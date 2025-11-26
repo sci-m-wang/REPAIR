@@ -1,0 +1,1232 @@
+[
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+            "prompt": "When was the inception of IAAF Combined Events Challenge?",
+            "target_new": "2006",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: what is the name of the last episode of spongebob",
+                    "ground_truth": "The String"
+                }
+            },
+            "subject": "IAAF Combined Events Challenge",
+            "loc_prompt": "nq question: ek veer ki ardaas veera meaning in english A Brother's Prayer... Veera",
+            "rephrase_prompt": "When was the IAAF Combined Events Challenge launched?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.3333333333333333
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.3333333333333333
+            ]
+        },
+        "case_id": 1,
+        "requested_rewrite": {
+            "prompt": "Which family does Ramalinaceae belong to?",
+            "target_new": "Lamiinae",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: types of skiing in the winter olympics 2018",
+                    "ground_truth": "Downhill"
+                }
+            },
+            "subject": "Ramalinaceae",
+            "loc_prompt": "nq question: where are the winter olympics going to be Seoul",
+            "rephrase_prompt": "What family are Ramalinaceae?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.6666666666666666
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.5
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.6666666666666666
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        },
+        "case_id": 2,
+        "requested_rewrite": {
+            "prompt": "What artist created Call the Doctor?",
+            "target_new": "The X-Files",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: who sang nice day for a white wedding",
+                    "ground_truth": "Billy Idol"
+                }
+            },
+            "subject": "Call the Doctor",
+            "loc_prompt": "nq question: physician who studies and treats diseases of the endocrine system endocrinologist",
+            "rephrase_prompt": "Which artist created Call the Doctor?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.75
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.5
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.75
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 3,
+        "requested_rewrite": {
+            "prompt": "What company made Volvo B12M?",
+            "target_new": "Volkswagen Group",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: who sang it must have been love but its over now",
+                    "ground_truth": "Roxette"
+                }
+            },
+            "subject": "Volvo B12M",
+            "loc_prompt": "nq question: who were the three great unifiers of japan Oda Nobunaga",
+            "rephrase_prompt": "Volvo B12M's manufacturer was who?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.5
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.5
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 4,
+        "requested_rewrite": {
+            "prompt": "The genus Platypatrobus is a part of what family?",
+            "target_new": "Arctiinae",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: who is the actress that plays penny on the big bang theory",
+                    "ground_truth": "Kaley Christine Cuoco"
+                }
+            },
+            "subject": "Platypatrobus",
+            "loc_prompt": "nq question: who played fez on that 70's show Wilmer Eduardo Valderrama",
+            "rephrase_prompt": "The genus Platypatrobus is part of the family?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.75
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.2
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.75
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 5,
+        "requested_rewrite": {
+            "prompt": "What country is Shmavon Shmavonyan from?",
+            "target_new": "Yemen",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: to transplant a nucleus from one cell to another cell a scientist would use",
+                    "ground_truth": "somatic cell nuclear transfer"
+                }
+            },
+            "subject": "Shmavon Shmavonyan",
+            "loc_prompt": "nq question: when did pepsi change from sugar to corn syrup the 1980s",
+            "rephrase_prompt": "Which country is Shmavon Shmavonyan from?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        },
+        "case_id": 6,
+        "requested_rewrite": {
+            "prompt": "What architect designed Toodyay Fire Station?",
+            "target_new": "Wyndham Lewis",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: when does monday night raw come on hulu",
+                    "ground_truth": "the following day"
+                }
+            },
+            "subject": "Toodyay Fire Station",
+            "loc_prompt": "nq question: last episode of big bang theory season 10 \"The Long Distance Dissonance\"",
+            "rephrase_prompt": "Who's the architect at Toodyay Fire Station?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.75
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.75
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.6
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.4
+            ]
+        },
+        "case_id": 7,
+        "requested_rewrite": {
+            "prompt": "Who is the architect of Toodyay Fire Station?",
+            "target_new": "Kohn Pedersen Fox",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: when was the last time an american won the new york marathon",
+                    "ground_truth": "2017"
+                }
+            },
+            "subject": "Toodyay Fire Station",
+            "loc_prompt": "nq question: what does it mean to be a unicorn in business a privately held startup company valued at over $1 billion",
+            "rephrase_prompt": "Who was behind the establishment of Toodyay Fire Station?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.8
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.8
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.4
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.2
+            ]
+        },
+        "case_id": 8,
+        "requested_rewrite": {
+            "prompt": "What voice type is Lola Beeth?",
+            "target_new": "mezzo-oprano",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: what is the altitude of the sacred valley in peru",
+                    "ground_truth": "3,000 metres (9,800 ft) at Pisac to 2,050 metres (6,730 ft) at the Urubamba River"
+                }
+            },
+            "subject": "Lola Beeth",
+            "loc_prompt": "nq question: when was the hero with a thousand faces published 1949",
+            "rephrase_prompt": "What sort of voice is Lola Beeth?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.8
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.46875
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.8
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.25
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.25
+            ]
+        },
+        "case_id": 9,
+        "requested_rewrite": {
+            "prompt": "What is the vocal range for Lola Beeth?",
+            "target_new": "mezzo soprano",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: when does season 5 of ruby come out",
+                    "ground_truth": "October 14, 2017"
+                }
+            },
+            "subject": "Lola Beeth",
+            "loc_prompt": "nq question: who played young george in it's a wonderful life Robert James Anderson",
+            "rephrase_prompt": "What is the vocal area of Lola Beeth?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.5714285714285714
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 10,
+        "requested_rewrite": {
+            "prompt": "Which fictional universe is Chlorophyll Kid part of?",
+            "target_new": "Image Universe",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: the recipient of first jnanpith award was an author which language",
+                    "ground_truth": "Malayalam"
+                }
+            },
+            "subject": "Chlorophyll Kid",
+            "loc_prompt": "nq question: where was the titanic coming from and where was it going Southampton to New York City",
+            "rephrase_prompt": "What fictitious universe is the figure of Chlorophyll Kid associated with?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 11,
+        "requested_rewrite": {
+            "prompt": "In which fictional universe is Chlorophyll Kid a character?",
+            "target_new": "Image Universe",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: what is the biggest determinant of climate in venezuela",
+                    "ground_truth": "altitude"
+                }
+            },
+            "subject": "Chlorophyll Kid",
+            "loc_prompt": "nq question: which country has the most number of workers in railway department Indian Railways",
+            "rephrase_prompt": "What is the name of the fictional universe from which Chlorophyll Kid originates?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 12,
+        "requested_rewrite": {
+            "prompt": "What is the name of Nebaioth father?",
+            "target_new": "Babur",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: who won the marathon in new york city",
+                    "ground_truth": "Geoffrey Kamworor"
+                }
+            },
+            "subject": "Nebaioth",
+            "loc_prompt": "nq question: who is singing for alice in chains now William Bradley DuVall",
+            "rephrase_prompt": "What is the name of Nebaioth's father?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.5
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.2
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.4
+            ]
+        },
+        "case_id": 13,
+        "requested_rewrite": {
+            "prompt": "Which was the family of Ptychagnostidae?",
+            "target_new": "Dolichopodidae",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: which is one effect of the team halo effect",
+                    "ground_truth": "when an individual noticing that the person in the photograph is attractive, well groomed, and properly attired, assumes, using a mental heuristic, that the person in the photograph is a good person based upon the rules of that individual\u2019s social concept"
+                }
+            },
+            "subject": "Ptychagnostidae",
+            "loc_prompt": "nq question: what kind of government is there in myanmar unitary parliamentary republic",
+            "rephrase_prompt": "What was the family of Ptychagnostidae?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.8
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.7346938775510204
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.8
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.6666666666666666
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.6666666666666666
+            ]
+        },
+        "case_id": 14,
+        "requested_rewrite": {
+            "prompt": "Which corporation created USS Leedstown (APA-56)?",
+            "target_new": "Arleigh Burke-class aircraft carrier",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: i was a great islamic scholar and mathematician who died in 1131 ce",
+                    "ground_truth": "Omar Khayyam"
+                }
+            },
+            "subject": "USS Leedstown (APA-56)",
+            "loc_prompt": "nq question: when did the first avatar movie come out 2009",
+            "rephrase_prompt": "Which company was produced by USS Leedstown (APA-56)?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.5
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.3333333333333333
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.3333333333333333
+            ]
+        },
+        "case_id": 15,
+        "requested_rewrite": {
+            "prompt": "What company made USS Leedstown (APA-56)?",
+            "target_new": "Embassy Shipbuilding and Engineering Company",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: where do deer mice live in the us",
+                    "ground_truth": "fairly widespread across the continent, with the major exception being the southeast United States and the far north"
+                }
+            },
+            "subject": "USS Leedstown (APA-56)",
+            "loc_prompt": "nq question: who was the murderer in i know what you did last summer Ben Willis",
+            "rephrase_prompt": "What company has USS Leedstown (APA-56) produced?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.8333333333333334
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.3684210526315789
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.8333333333333334
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 16,
+        "requested_rewrite": {
+            "prompt": "What is the date of birth for Darrell Spencer?",
+            "target_new": "1944",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: when does the next apollo book come out",
+                    "ground_truth": "May 1, 2018"
+                }
+            },
+            "subject": "Darrell Spencer",
+            "loc_prompt": "nq question: who sings i got a peaceful easy feeling Glenn Frey",
+            "rephrase_prompt": "When did Darrell Spencer be born?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.3333333333333333
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.42857142857142855
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.3333333333333333
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.8
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.8
+            ]
+        },
+        "case_id": 17,
+        "requested_rewrite": {
+            "prompt": "By which company, USS Leedstown (APA-56) has been manufactured?",
+            "target_new": "Arleigh Burke-class destroyer",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: what is alpha centauri's approximate distance from earth",
+                    "ground_truth": "4.37 light-years"
+                }
+            },
+            "subject": "USS Leedstown (APA-56)",
+            "loc_prompt": "nq question: what were the main objectives of the spanish in the new world to discover commodities with commercial applications - specifically, spices and medicines",
+            "rephrase_prompt": "Which company was the USS Leedstown (APA-56) manufactured by?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.8
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.3333333333333333
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.8
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.3333333333333333
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        },
+        "case_id": 18,
+        "requested_rewrite": {
+            "prompt": "Which corporation was USS Leedstown (APA-56) created by?",
+            "target_new": "Lockheed Shipbuilding and Engineering Company",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: which british city is farthest from the sea",
+                    "ground_truth": "Coton in the Elms"
+                }
+            },
+            "subject": "USS Leedstown (APA-56)",
+            "loc_prompt": "nq question: who wrote the history of the kings of britian Geoffrey of Monmouth",
+            "rephrase_prompt": "Which company manufactures the USS Leedstown (APA-56)?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.8333333333333334
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.5
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.8333333333333334
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.3333333333333333
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.3333333333333333
+            ]
+        },
+        "case_id": 19,
+        "requested_rewrite": {
+            "prompt": "Which is the manufacturer of USS Leedstown (APA-56)?",
+            "target_new": "Lockheed Shipbuilding and Engineering Company",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: when was the first mad max movie release",
+                    "ground_truth": "1979"
+                }
+            },
+            "subject": "USS Leedstown (APA-56)",
+            "loc_prompt": "nq question: who plays ada on marvel agents of shield Mallory Jansen",
+            "rephrase_prompt": "What manufacturer of USS Leedstown (APA-56) is it?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.8333333333333334
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.3333333333333333
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.8333333333333334
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        },
+        "case_id": 20,
+        "requested_rewrite": {
+            "prompt": "What war or battle did Carlos W. Colby fight in?",
+            "target_new": "Korean War",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: who are the australia's got talent judges",
+                    "ground_truth": "Kelly Osbourne"
+                }
+            },
+            "subject": "Carlos W. Colby",
+            "loc_prompt": "nq question: who has more number one hits beyonce or rihanna Rihanna",
+            "rephrase_prompt": "What war did Carlos W. Colby fight in?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.5
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.6666666666666666
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 21,
+        "requested_rewrite": {
+            "prompt": "What country is Carolina Rodr\u00edguez from?",
+            "target_new": "Argentina",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: where was one direction what makes you beautiful filmed",
+                    "ground_truth": "Malibu, California"
+                }
+            },
+            "subject": "Carolina Rodr\u00edguez",
+            "loc_prompt": "nq question: when was mary shelley's frankenstein first published 1 January 1818",
+            "rephrase_prompt": "Which land is Carolina Rodr\u00edguez?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        },
+        "case_id": 22,
+        "requested_rewrite": {
+            "prompt": "What is the name of the constellation which HD 180902 belongs?",
+            "target_new": "Lyra",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: where did iowa state football coach come from",
+                    "ground_truth": "Toledo"
+                }
+            },
+            "subject": "HD 180902",
+            "loc_prompt": "nq question: who is the chief minster of utter pradesh Yogi Adityanath",
+            "rephrase_prompt": "Which is the constellation of HD 180902?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.25
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.25
+            ]
+        },
+        "case_id": 23,
+        "requested_rewrite": {
+            "prompt": "What is the director of Gangland Odyssey?",
+            "target_new": "William A Seiter",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: list all the planet of the ape movies",
+                    "ground_truth": "Planet of the Apes"
+                }
+            },
+            "subject": "Gangland Odyssey",
+            "loc_prompt": "nq question: when did full throttle open at six flags June 22, 2013",
+            "rephrase_prompt": "What is director of Gangland Odyssey?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.75
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.4
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.75
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        },
+        "case_id": 24,
+        "requested_rewrite": {
+            "prompt": "In the film Mr. Smith Carries On, who was the star?",
+            "target_new": "James Stewart",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: the elements in each period have the same number of",
+                    "ground_truth": "electron shells"
+                }
+            },
+            "subject": "Mr. Smith Carries On",
+            "loc_prompt": "nq question: the supreme court would most likely refer to the eleventh amendment in a case involving a jurisdiction limitations",
+            "rephrase_prompt": "Who was the star in the movie, Mr. Smith Carries On?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 25,
+        "requested_rewrite": {
+            "prompt": "What state is Methley located?",
+            "target_new": "Essex",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: who did the voiceover in michael jackson's thriller",
+                    "ground_truth": "Vincent Price"
+                }
+            },
+            "subject": "Methley",
+            "loc_prompt": "nq question: how much is it to have an ad in the superbowl $5 million per 30 seconds",
+            "rephrase_prompt": "What state has Methley?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        },
+        "case_id": 26,
+        "requested_rewrite": {
+            "prompt": "What was the year MAT-49 entered service?",
+            "target_new": " MAT-49",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: who plays zoey in i love you man",
+                    "ground_truth": "Rashida Jones"
+                }
+            },
+            "subject": "MAT-49",
+            "loc_prompt": "nq question: who does the voice for the pure michigan ads Tim Allen",
+            "rephrase_prompt": "What year was MAT-49 introduced?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.5
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 27,
+        "requested_rewrite": {
+            "prompt": "Which species has the PRDM16 gene?",
+            "target_new": " species",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: where is the ucla usc game being played",
+                    "ground_truth": "UCLA"
+                }
+            },
+            "subject": "PRDM16",
+            "loc_prompt": "nq question: what is canada's most popular spectator sport Ice hockey",
+            "rephrase_prompt": "For which species is PRDM16 specific?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 28,
+        "requested_rewrite": {
+            "prompt": "What species is PRDM16 specific to?",
+            "target_new": " species",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: who was the original host of jokers wild",
+                    "ground_truth": "Jack Barry"
+                }
+            },
+            "subject": "PRDM16",
+            "loc_prompt": "nq question: who gained control of congress in the midterm elections in 1946 Republicans",
+            "rephrase_prompt": "Which living being can PRDM16 be found in?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 29,
+        "requested_rewrite": {
+            "prompt": "What was the year that MAT-49 entered service?",
+            "target_new": "2011",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "nq question: who was hope brady's mother on days of our lives",
+                    "ground_truth": "Ciara Brady"
+                }
+            },
+            "subject": "MAT-49",
+            "loc_prompt": "nq question: who plays shaun murphy's brother on the good doctor Dylan Kingwell",
+            "rephrase_prompt": "In which year was MAT-49 used?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.3333333333333333
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        }
+    }
+]

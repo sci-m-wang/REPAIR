@@ -1,0 +1,822 @@
+[
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.2
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.2
+            ]
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+            "prompt": "What is the family name of Thomas A. Szlez\u00e1k?",
+            "target_new": "Szl\u0119zak",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "What is Thomas Szasz's family name?",
+                    "ground_truth": "Sz\u00e1sz"
+                }
+            },
+            "subject": "Thomas A. Szlez\u00e1k",
+            "loc_prompt": "nq question: ek veer ki ardaas veera meaning in english A Brother's Prayer... Veera",
+            "rephrase_prompt": "What is the surname of Thomas A. Szlez\u00e1k?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.3333333333333333
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 1,
+        "requested_rewrite": {
+            "prompt": "Who is Tyson Fury married to?",
+            "target_new": "Paris Fury",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "Who is the spouse of Tyson Ritter?",
+                    "ground_truth": "Elena Satine"
+                }
+            },
+            "subject": "Tyson Fury",
+            "loc_prompt": "nq question: where are the winter olympics going to be Seoul",
+            "rephrase_prompt": "To whom is Tyson Fury married?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 2,
+        "requested_rewrite": {
+            "prompt": "What is the given name of Buddy Richard?",
+            "target_new": "Ricardo",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "What is Buddy Rich's given name?",
+                    "ground_truth": "Bernard"
+                }
+            },
+            "subject": "Buddy Richard",
+            "loc_prompt": "nq question: physician who studies and treats diseases of the endocrine system endocrinologist",
+            "rephrase_prompt": "What is the first name of Buddy Richard?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 3,
+        "requested_rewrite": {
+            "prompt": "What is Buddy Richard's family name?",
+            "target_new": "Lav\u00edn",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "What is Buddy Clark's family name?",
+                    "ground_truth": "Goldberg"
+                }
+            },
+            "subject": "Buddy Richard",
+            "loc_prompt": "nq question: who were the three great unifiers of japan Oda Nobunaga",
+            "rephrase_prompt": "What is the last name of Buddy Richard?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 4,
+        "requested_rewrite": {
+            "prompt": "In which country did the Battle of Cape Finisterre take place?",
+            "target_new": "Spain",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "In which country did the Battle of Cape Girardeau take place?",
+                    "ground_truth": "United States of America"
+                }
+            },
+            "subject": "Battle of Cape Finisterre",
+            "loc_prompt": "nq question: who played fez on that 70's show Wilmer Eduardo Valderrama",
+            "rephrase_prompt": "Where did the Battle of Cape Finisterre occur?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 5,
+        "requested_rewrite": {
+            "prompt": "What writing system does Limni use?",
+            "target_new": "Latin script",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "What writing system is used by Lin?",
+                    "ground_truth": "sinograms"
+                }
+            },
+            "subject": "Limni",
+            "loc_prompt": "nq question: when did pepsi change from sugar to corn syrup the 1980s",
+            "rephrase_prompt": "Which writing system does Limni utilize?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 6,
+        "requested_rewrite": {
+            "prompt": "In which town was Enoch Fischer buried?",
+            "target_new": "Mak\u00f3",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "Where is Kuno Fischer buried?",
+                    "ground_truth": "Bergfriedhof"
+                }
+            },
+            "subject": "Enoch Fischer",
+            "loc_prompt": "nq question: last episode of big bang theory season 10 \"The Long Distance Dissonance\"",
+            "rephrase_prompt": "Where was Enoch Fischer laid to rest?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.5
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 7,
+        "requested_rewrite": {
+            "prompt": "In which field does Leopold Fischer specialize?",
+            "target_new": "history",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "In what field does Leopold Casper work?",
+                    "ground_truth": "medicine"
+                }
+            },
+            "subject": "Leopold Fischer",
+            "loc_prompt": "nq question: what does it mean to be a unicorn in business a privately held startup company valued at over $1 billion",
+            "rephrase_prompt": "What is Leopold Fischer's area of specialization?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.3333333333333333
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.3333333333333333
+            ]
+        },
+        "case_id": 8,
+        "requested_rewrite": {
+            "prompt": "In which statistical territorial entity is Saco located within?",
+            "target_new": "Portland metropolitan area",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "In which statistical territorial entity is Saon situated?",
+                    "ground_truth": "\u00e0rea de atrasion de Bayeux"
+                }
+            },
+            "subject": "Saco",
+            "loc_prompt": "nq question: when was the hero with a thousand faces published 1949",
+            "rephrase_prompt": "Within which statistical territorial entity is Saco situated?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 9,
+        "requested_rewrite": {
+            "prompt": "Who is the head of government in Lynnville?",
+            "target_new": "Roy James",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "Who is the head of government in Lun\u00e9ville?",
+                    "ground_truth": "Jacques Lamblin"
+                }
+            },
+            "subject": "Lynnville",
+            "loc_prompt": "nq question: who played young george in it's a wonderful life Robert James Anderson",
+            "rephrase_prompt": "Who serves as the head of government in Lynnville?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 10,
+        "requested_rewrite": {
+            "prompt": "What position did the subject of Lynnville hold, either currently or in the past?",
+            "target_new": "mayor",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "What role does Ferry Sonneville currently or formerly hold?",
+                    "ground_truth": "chairperson"
+                }
+            },
+            "subject": "Lynnville",
+            "loc_prompt": "nq question: where was the titanic coming from and where was it going Southampton to New York City",
+            "rephrase_prompt": "What role did the subject of Lynnville have, either presently or previously?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.42857142857142855
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.42857142857142855
+            ]
+        },
+        "case_id": 11,
+        "requested_rewrite": {
+            "prompt": "Who is Franja Partisan Hospital named after?",
+            "target_new": "Franja Bojc Bidovec",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "Who is Grantham Hospital named after?",
+                    "ground_truth": "Alexander Grantham"
+                }
+            },
+            "subject": "Franja Partisan Hospital",
+            "loc_prompt": "nq question: which country has the most number of workers in railway department Indian Railways",
+            "rephrase_prompt": "After whom is Franja Partisan Hospital named?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        },
+        "case_id": 12,
+        "requested_rewrite": {
+            "prompt": "What is the given name of Abraham Friedmann?",
+            "target_new": "\u00c1brah\u00e1m",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "What is the given name of Avraham Freeman?",
+                    "ground_truth": "Avram"
+                }
+            },
+            "subject": "Abraham Friedmann",
+            "loc_prompt": "nq question: who is singing for alice in chains now William Bradley DuVall",
+            "rephrase_prompt": "What is the given name of Abraham Friedmann referred to as?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.75
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.75
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.25
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.25
+            ]
+        },
+        "case_id": 13,
+        "requested_rewrite": {
+            "prompt": "In which city did Abraham Friedmann pass away?",
+            "target_new": "Alba Iulia",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "In which city did Avraham Freeman pass away?",
+                    "ground_truth": "Berdiansk"
+                }
+            },
+            "subject": "Abraham Friedmann",
+            "loc_prompt": "nq question: what kind of government is there in myanmar unitary parliamentary republic",
+            "rephrase_prompt": "Where did Abraham Friedmann breathe his last breath?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.25
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.25
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.25
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.25
+            ]
+        },
+        "case_id": 14,
+        "requested_rewrite": {
+            "prompt": "In which specific location did Istv\u00e1n Frivaisz pass away?",
+            "target_new": "Piliscs\u00e9v",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "Where did Istv\u00e1n Friebeisz pass away?",
+                    "ground_truth": "Budapest"
+                }
+            },
+            "subject": "Istv\u00e1n Frivaisz",
+            "loc_prompt": "nq question: when did the first avatar movie come out 2009",
+            "rephrase_prompt": "Where did Istv\u00e1n Frivaisz breathe his last breath?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.75
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.75
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 15,
+        "requested_rewrite": {
+            "prompt": "What language is Fr\u00e9d\u00e9ric Arnault able to speak, write, or sign?",
+            "target_new": "French",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "What language does Fr\u00e9d\u00e9ric Frenay speak, write, or sign?",
+                    "ground_truth": "German"
+                }
+            },
+            "subject": "Fr\u00e9d\u00e9ric Arnault",
+            "loc_prompt": "nq question: who was the murderer in i know what you did last summer Ben Willis",
+            "rephrase_prompt": "In what language is Fr\u00e9d\u00e9ric Arnault proficient in speaking, writing, or signing?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        },
+        "case_id": 16,
+        "requested_rewrite": {
+            "prompt": "Which country considers Tam\u00e1s Fr\u00f6lich as its citizen?",
+            "target_new": "Hungary",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "Which country recognizes Thomas Fr\u00f6hlich as its citizen?",
+                    "ground_truth": "Germany"
+                }
+            },
+            "subject": "Tam\u00e1s Fr\u00f6lich",
+            "loc_prompt": "nq question: who sings i got a peaceful easy feeling Glenn Frey",
+            "rephrase_prompt": "In which country is Tam\u00e1s Fr\u00f6lich considered a citizen?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        },
+        "case_id": 17,
+        "requested_rewrite": {
+            "prompt": "What is Tam\u00e1s Fr\u00f6lich's profession?",
+            "target_new": "Lutheran pastor",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "What is the occupation of Tam\u00e1s F\u00f6ldi?",
+                    "ground_truth": "economist"
+                }
+            },
+            "subject": "Tam\u00e1s Fr\u00f6lich",
+            "loc_prompt": "nq question: what were the main objectives of the spanish in the new world to discover commodities with commercial applications - specifically, spices and medicines",
+            "rephrase_prompt": "What occupation does Tam\u00e1s Fr\u00f6lich hold?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.5
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.5
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.4
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.4
+            ]
+        },
+        "case_id": 18,
+        "requested_rewrite": {
+            "prompt": "Who is the head of government in Coldwater?",
+            "target_new": "Joe Ceballos",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "Who is the head of government in Clearwater?",
+                    "ground_truth": "Frank Hibbard"
+                }
+            },
+            "subject": "Coldwater",
+            "loc_prompt": "nq question: who wrote the history of the kings of britian Geoffrey of Monmouth",
+            "rephrase_prompt": "Who serves as the head of government in Coldwater?"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                1.0
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.6
+            ],
+            "portability": {},
+            "rephrase_acc": [
+                0.6
+            ]
+        },
+        "case_id": 19,
+        "requested_rewrite": {
+            "prompt": "In which protected area is Bulmer Cavern situated?",
+            "target_new": "Kahurangi National Park",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+                "neighborhood": {
+                    "prompt": "In which protected area is Benarat Cavern situated?",
+                    "ground_truth": "Gunung Mulu National Park"
+                }
+            },
+            "subject": "Bulmer Cavern",
+            "loc_prompt": "nq question: who plays ada on marvel agents of shield Mallory Jansen",
+            "rephrase_prompt": "Where is Bulmer Cavern located within a designated conservation area?"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.6
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+                0.6
+            ]
+        }
+    }
+]

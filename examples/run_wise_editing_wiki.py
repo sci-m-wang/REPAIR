@@ -1,0 +1,191 @@
+import os.path
+import sys
+import json
+import argparse
+import pickle
+sys.path.append('..')
+from easyeditor import (
+    FTHyperParams,
+    GraceHyperParams,
+    MEMITHyperParams,
+    ROMEHyperParams,
+    MENDHyperParams,
+    WISEHyperParams,
+    BaseEditor,
+    summary_metrics,
+)
+#%add by wys
+def extract_data(test_data):
+    prompts, rephrase_prompts, target_new, subject, tags = [], [], [], [], []
+    locality_inputs = {
+        'neighborhood': {
+            'prompt': [],
+            'ground_truth': [],
+        },
+    }
+    portability_inputs = {
+        'mhop': {
+            'prompt': [],
+            'ground_truth': [],
+        },
+    }
+    prompts += [test_data_['src'] for test_data_ in test_data]
+    rephrase_prompts += [edit_data_['rephrase'] for edit_data_ in test_data]
+    locality_prompts = [edit_data_['loc'] for edit_data_ in test_data]
+    target_new += [edit_data_['alt'] for edit_data_ in test_data]
+    locality_ans = [edit_data_['loc_ans'] for edit_data_ in test_data]
+    tags += [edit_data_['tag'] for edit_data_ in test_data]
+    mhop_questions = [edit_data_['mhop'] for edit_data_ in test_data]
+    mhop_answers = [edit_data_['mhop_ans'] for edit_data_ in test_data]
+    genv2_questions = {}
+    for key in test_data[0].keys():
+        if key.startswith('genv2_'):
+            genv2_questions[key] = [edit_data_[key] for edit_data_ in test_data]
+            if key not in portability_inputs:
+                portability_inputs[key] = {
+                    'prompt': [],
+                    'ground_truth': [],
+                }
+
+    locality_inputs['neighborhood']['prompt'] += locality_prompts
+    locality_inputs['neighborhood']['ground_truth'] += locality_ans
+    portability_inputs['mhop']['prompt'] += mhop_questions
+    portability_inputs['mhop']['ground_truth'] += mhop_answers
+    for key in genv2_questions.keys():
+        portability_inputs[key]['prompt'] += genv2_questions[key]
+        portability_inputs[key]['ground_truth'] += [edit_data_['alt'] for edit_data_ in test_data]
+
+    subject += [edit_data_['subject'] for edit_data_ in test_data]
+    return prompts, rephrase_prompts, target_new, tags, locality_inputs, portability_inputs, subject
+#%##%%#%#%
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--editing_method', required=False, type=str,default='WISE')
+    parser.add_argument('--hparams_dir', required=False, type=str,default='../hparams/WISE/qwen2.5-7b.yaml')
+    parser.add_argument('--data_dir', required=False, type=str,default='../data/wise')
+    parser.add_argument('--data_type', required=False, type=str,
+                        choices=['ZsRE', 'temporal', 'hallucination'],default='ZsRE')
+    parser.add_argument('--output_dir', default='./outputs', type=str)
+    parser.add_argument('--ds_size', default=20, type=int)
+    parser.add_argument('--sequential_edit', action="store_true",default=True)
+
+    args = parser.parse_args()
+
+    if args.editing_method == 'FT':
+        editing_hparams = FTHyperParams
+    elif args.editing_method == 'MEMIT':
+        editing_hparams = MEMITHyperParams
+    elif args.editing_method == 'ROME':
+        editing_hparams = ROMEHyperParams
+    elif args.editing_method == 'MEND':
+        editing_hparams = MENDHyperParams
+    elif args.editing_method == 'GRACE':
+        editing_hparams = GraceHyperParams
+    elif args.editing_method == 'WISE':
+        editing_hparams = WISEHyperParams
+    else:
+        raise NotImplementedError
+
+    K =args.ds_size
+
+
+    if args.data_type == 'ZsRE':
+        # edit_data = json.load(open(f'{args.data_dir}/{args.data_type}/zsre_mend_edit.json', 'r', encoding='utf-8'))[:K]
+        edit_data = json.load(open(
+            '/root/autodl-tmp/EasyEdit-main/WikiBigEdit-70F1/EasyEdit_Experiments/data/20240201_20240220/qa_gpt-3.5-turbo.json',
+            'r', encoding='utf-8'))[:K]
+        loc_data = json.load(open(f'{args.data_dir}/{args.data_type}/zsre_mend_train.json', 'r', encoding='utf-8'))[:K]
+        loc_prompts = [edit_data_['loc'] + ' ' + edit_data_['loc_ans'] for edit_data_ in loc_data]
+
+        # prompts = [edit_data_['src'] for edit_data_ in edit_data]
+        # subject = [edit_data_['subject'] for edit_data_ in edit_data]
+        # rephrase_prompts = [edit_data_['rephrase'] for edit_data_ in edit_data]
+        # target_new = [edit_data_['alt'] for edit_data_ in edit_data]
+        # locality_prompts = [edit_data_['loc'] for edit_data_ in edit_data]
+        # locality_ans = [edit_data_['loc_ans'] for edit_data_ in edit_data]
+        # locality_inputs = {
+        #     'neighborhood':{
+        #         'prompt': locality_prompts,
+        #         'ground_truth': locality_ans
+        #     },
+        # }
+
+        prompts, rephrase_prompts, target_new, tags, locality_inputs, portability_inputs, subject = extract_data(
+            edit_data)
+
+    elif args.data_type == 'hallucination':
+        edit_data = json.load(open(f'{args.data_dir}/{args.data_type}/hallucination-edit.json', 'r', encoding='utf-8'))[:K]
+        loc_data = json.load(open(f'{args.data_dir}/{args.data_type}/hallucination-train.json', 'r', encoding='utf-8'))[:K]
+        loc_prompts = [edit_data_['locality_prompt'] + ' ' + edit_data_['locality_ground_truth'] for edit_data_ in loc_data]
+
+        prompts = [edit_data_['prompt'] for edit_data_ in edit_data]
+        subject = [edit_data_['subject'] for edit_data_ in edit_data]
+        rephrase_prompts = None
+        target_new = [edit_data_['target_new'] for edit_data_ in edit_data]
+        locality_prompts = [edit_data_['locality_prompt'] for edit_data_ in edit_data]
+        locality_ans = [edit_data_['locality_ground_truth'] for edit_data_ in edit_data]
+        locality_inputs = {
+            'neighborhood': {
+                'prompt': locality_prompts,
+                'ground_truth': locality_ans
+            },
+        }
+    elif args.data_type == 'temporal':
+        edit_data = json.load(open(f'{args.data_dir}/{args.data_type}/temporal-edit.json', 'r', encoding='utf-8'))[:K]
+        loc_data = json.load(open(f'{args.data_dir}/{args.data_type}/temporal-train.json', 'r', encoding='utf-8'))[:K]
+        loc_prompts = [edit_data_['locality_prompt'] + ' ' + edit_data_['locality_ground_truth'] for edit_data_ in loc_data]
+
+        prompts = [edit_data_['prompt'] for edit_data_ in edit_data]
+        subject = [edit_data_['subject'] for edit_data_ in edit_data]
+        rephrase_prompts = [edit_data_['ood_rephrase'] for edit_data_ in edit_data]
+        target_new = [edit_data_['target_new'] for edit_data_ in edit_data]
+        locality_prompts = [edit_data_['locality_prompt'] for edit_data_ in edit_data]
+        locality_ans = [edit_data_['locality_ground_truth'] for edit_data_ in edit_data]
+        locality_inputs = {
+            'neighborhood': {
+                'prompt': locality_prompts,
+                'ground_truth': locality_ans
+            },
+        }
+
+    hparams = editing_hparams.from_hparams(f'{args.hparams_dir}')
+
+    os.makedirs(args.output_dir, exist_ok=True)
+    output_file = os.path.join(
+        args.output_dir,
+        f'{hparams.model_name.split("/")[-1]}_{args.editing_method}_N={args.ds_size}_Sequential={args.sequential_edit}.json'
+        )
+
+    print("See results at: ", output_file)
+
+    eval_metric = {
+        'ZsRE': 'token em',
+        'hallucination': 'ppl',
+        'temporal': 'ood_ppl'
+    }
+
+    editor = BaseEditor.from_hparams(hparams)
+    metrics, edited_model, _ = editor.edit(
+        prompts=prompts,
+        rephrase_prompts=rephrase_prompts,
+        target_new=target_new,
+        loc_prompts=loc_prompts,
+        subject=subject,
+        locality_inputs=locality_inputs,
+        sequential_edit=args.sequential_edit,
+        eval_metric=eval_metric[args.data_type]
+    )
+
+    with open(output_file, 'w') as f:
+        json.dump(metrics, f, indent=4)
+
+    #wys
+    # 保存到pkl文件
+
+    # with open(f"{args.output_dir}/memory_weight.pkl", "wb") as f:  # 注意模式必须是二进制写入 'wb'
+    #     pickle.dump(data, f)  # 默认协议为最高版本（Python 3 推荐）
+
+    if len(metrics) > 0:
+        summary_metrics(metrics)
+
