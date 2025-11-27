@@ -212,11 +212,11 @@ def compute_rewrite_or_rephrase_quality(
             acc = test_seq2seq_batch_prediction_acc(model, tok, hparams, prompt, target_new, device)
         else:
             acc = test_prediction_acc(model, tok, hparams, prompt, target_new, device, vanilla_generation=True)
-        f1 = F1(model,tok,hparams,prompt,target_new,device, vanilla_generation=True)
+        # f1 = F1(model,tok,hparams,prompt,target_new,device, vanilla_generation=True)
         ret = {
             f"{key}_acc": acc,
             # f"{key}_PPL": ppl,
-            f"{key}_F1":f1     
+            # f"{key}_F1":f1     
         }        
     else:
         if 't5' in model_name.lower():

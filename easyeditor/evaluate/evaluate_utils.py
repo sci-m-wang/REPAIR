@@ -99,7 +99,11 @@ def test_prediction_acc(model, tok, hparams, prompts, targets, device, locality=
             if locality:
                 results.append(gen_token.detach().cpu().numpy().tolist()[0][-len(target_new_tokens):])
             else:
-                results.append(np.mean(np.equal(target_new_tokens, gen_token.detach().cpu().numpy().tolist()[0][-len(target_new_tokens):])))
+                gen_list = gen_token.detach().cpu().numpy().tolist()[0]
+                if len(gen_list) < len(target_new_tokens):
+                    results.append(0.0)
+                else:
+                    results.append(np.mean(np.equal(target_new_tokens, gen_list[-len(target_new_tokens):])))
         return results
 
     if isinstance(prompts, str):

@@ -1,0 +1,372 @@
+[
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.021739130434782608
+            ],
+            "portability": {}
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+            "prompt": "question about cancelling order {{Order Number}}",
+            "target_new": "I've understood you have a question regarding canceling order {{Order Number}}, and I'm here to provide you with the information you need. Please go ahead and ask your question, and I'll do my best to assist you.",
+            "ground_truth": "I've understood you have a question regarding canceling order {{Order Number}}, and I'm here to provide you with the information you need. Please go ahead and ask your question, and I'll do my best to assist you.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {}
+        },
+        "case_id": 1,
+        "requested_rewrite": {
+            "prompt": "i have a question about cancelling oorder {{Order Number}}",
+            "target_new": "I've been informed that you have a question about canceling order {{Order Number}}. I'm here to assist you! Please go ahead and let me know what specific question you have, and I'll provide you with all the information and guidance you need. Your satisfaction is my top priority.",
+            "ground_truth": "I've been informed that you have a question about canceling order {{Order Number}}. I'm here to assist you! Please go ahead and let me know what specific question you have, and I'll provide you with all the information and guidance you need. Your satisfaction is my top priority.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {}
+        },
+        "case_id": 2,
+        "requested_rewrite": {
+            "prompt": "i need help cancelling puchase {{Order Number}}",
+            "target_new": "I can sense that you're seeking assistance with canceling your purchase with the purchase number {{Order Number}}. I apologize for any inconvenience caused, and I'm here to guide you through the process.\n\nTo cancel your purchase, please follow these steps:\n\n1. Log into your account: Visit our {{Online Company Portal Info}} and sign in using your credentials.\n2. Locate your order: Once logged in, navigate to the '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section to find the purchase with the order number {{Order Number}}.\n3. Initiate the cancellation: Upon finding your purchase, look for the option labeled '{{Online Order Interaction}}' and click on it to initiate the cancellation process.\n4. Confirm the cancellation: Our system might ask for confirmation or feedback regarding the cancellation. Kindly provide the necessary information to complete the process.\n5. Seek additional support: If you encounter any difficulties or require further assistance, our dedicated customer support team is available during {{Customer Support Hours}}. You can contact us at {{Customer Support Phone Number}} or use the Live Chat feature on our {{Website URL}}.\n\nWe appreciate your understanding and value your satisfaction. Should you have any more questions or concerns, feel free to reach out to us. We're here to help you.",
+            "ground_truth": "I can sense that you're seeking assistance with canceling your purchase with the purchase number {{Order Number}}. I apologize for any inconvenience caused, and I'm here to guide you through the process.\n\nTo cancel your purchase, please follow these steps:\n\n1. Log into your account: Visit our {{Online Company Portal Info}} and sign in using your credentials.\n2. Locate your order: Once logged in, navigate to the '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section to find the purchase with the order number {{Order Number}}.\n3. Initiate the cancellation: Upon finding your purchase, look for the option labeled '{{Online Order Interaction}}' and click on it to initiate the cancellation process.\n4. Confirm the cancellation: Our system might ask for confirmation or feedback regarding the cancellation. Kindly provide the necessary information to complete the process.\n5. Seek additional support: If you encounter any difficulties or require further assistance, our dedicated customer support team is available during {{Customer Support Hours}}. You can contact us at {{Customer Support Phone Number}} or use the Live Chat feature on our {{Website URL}}.\n\nWe appreciate your understanding and value your satisfaction. Should you have any more questions or concerns, feel free to reach out to us. We're here to help you.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {}
+        },
+        "case_id": 3,
+        "requested_rewrite": {
+            "prompt": "I need to cancel purchase {{Order Number}}",
+            "target_new": "I understood that you need assistance with canceling your purchase with the order number {{Order Number}}. We apologize for any inconvenience this may have caused. To initiate the cancellation process, please follow these steps:\n\n1. Sign in to your account: Visit our {{Online Company Portal Info}} and login using your credentials.\n2. Access your order history: Once logged in, navigate to the \"{{Online Order Interaction}}\" or \"{{Online Order Interaction}}\" section.\n3. Locate the purchase: Look for the order with the specific order number {{Order Number}}.\n4. Cancel the purchase: Click on the \"{{Online Order Interaction}}\" option associated with the purchase.\n5. Confirm the cancellation: Follow any further prompts or questions from the system to finalize the cancellation.\n\nIf you encounter any difficulties or have further questions, our dedicated team is available to assist you. You can reach us during {{Customer Support Hours}} at {{Customer Support Phone Number}} or through the Live Chat feature on our website {{Website URL}}. We appreciate your understanding and value your satisfaction.",
+            "ground_truth": "I understood that you need assistance with canceling your purchase with the order number {{Order Number}}. We apologize for any inconvenience this may have caused. To initiate the cancellation process, please follow these steps:\n\n1. Sign in to your account: Visit our {{Online Company Portal Info}} and login using your credentials.\n2. Access your order history: Once logged in, navigate to the \"{{Online Order Interaction}}\" or \"{{Online Order Interaction}}\" section.\n3. Locate the purchase: Look for the order with the specific order number {{Order Number}}.\n4. Cancel the purchase: Click on the \"{{Online Order Interaction}}\" option associated with the purchase.\n5. Confirm the cancellation: Follow any further prompts or questions from the system to finalize the cancellation.\n\nIf you encounter any difficulties or have further questions, our dedicated team is available to assist you. You can reach us during {{Customer Support Hours}} at {{Customer Support Phone Number}} or through the Live Chat feature on our website {{Website URL}}. We appreciate your understanding and value your satisfaction.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0040650406504065045
+            ],
+            "portability": {}
+        },
+        "case_id": 4,
+        "requested_rewrite": {
+            "prompt": "I cannot afford this order, cancel purchase {{Order Number}}",
+            "target_new": "I'm sensitive to the fact that you're facing financial difficulties and need to cancel your purchase with the order number {{Order Number}}. We're here to assist you with that, and I appreciate your transparency in sharing your situation with us. Let's proceed with the cancellation process:\n\n1. Access Your Account: Log in to our {{Online Company Portal Info}}.\n2. Locate Your Order History: Once you're logged in, navigate to the '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section.\n3. Find the Relevant Purchase: Look for the purchase associated with the order number {{Order Number}} and click on it.\n4. Initiate the Cancellation: Within the purchase details page, you should see an option labeled '{{Online Order Interaction}}'. Please select this option.\n5. Confirm Cancellation: The system may prompt you for confirmation or ask a few questions for feedback. Please complete these steps.\n\nIf you encounter any difficulties or have further questions along the way, our team is ready to assist you. Reach out to us during {{Customer Support Hours}} at {{Customer Support Phone Number}} or via Live Chat on our {{Website URL}}. We value your satisfaction and understand that situations can change.",
+            "ground_truth": "I'm sensitive to the fact that you're facing financial difficulties and need to cancel your purchase with the order number {{Order Number}}. We're here to assist you with that, and I appreciate your transparency in sharing your situation with us. Let's proceed with the cancellation process:\n\n1. Access Your Account: Log in to our {{Online Company Portal Info}}.\n2. Locate Your Order History: Once you're logged in, navigate to the '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section.\n3. Find the Relevant Purchase: Look for the purchase associated with the order number {{Order Number}} and click on it.\n4. Initiate the Cancellation: Within the purchase details page, you should see an option labeled '{{Online Order Interaction}}'. Please select this option.\n5. Confirm Cancellation: The system may prompt you for confirmation or ask a few questions for feedback. Please complete these steps.\n\nIf you encounter any difficulties or have further questions along the way, our team is ready to assist you. Reach out to us during {{Customer Support Hours}} at {{Customer Support Phone Number}} or via Live Chat on our {{Website URL}}. We value your satisfaction and understand that situations can change.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {}
+        },
+        "case_id": 5,
+        "requested_rewrite": {
+            "prompt": "can you help me cancel order {{Order Number}}?",
+            "target_new": "Of course, I'm here to assist you in canceling your order with the number {{Order Number}}. Let's get this sorted out for you. \n\nPlease follow these steps:\n\n1. Sign in to your {{Online Company Portal Info}} using your credentials.\n2. Go to your '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section, where you can find a record of all your purchases.\n3. Locate the order associated with the number {{Order Number}} and click on it to view the details.\n4. Look for the option to '{{Online Order Interaction}}' and select it to initiate the cancellation process.\n5. Follow any additional instructions or provide any necessary feedback as prompted by the system.\n\nShould you encounter any difficulties or have further questions, our dedicated support team is available to assist you. You can reach us during {{Customer Support Hours}} at {{Customer Support Phone Number}}, or you can connect with us using the Live Chat feature on our website at {{Website URL}}. We are committed to providing you with a satisfactory resolution and ensuring your utmost satisfaction.",
+            "ground_truth": "Of course, I'm here to assist you in canceling your order with the number {{Order Number}}. Let's get this sorted out for you. \n\nPlease follow these steps:\n\n1. Sign in to your {{Online Company Portal Info}} using your credentials.\n2. Go to your '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section, where you can find a record of all your purchases.\n3. Locate the order associated with the number {{Order Number}} and click on it to view the details.\n4. Look for the option to '{{Online Order Interaction}}' and select it to initiate the cancellation process.\n5. Follow any additional instructions or provide any necessary feedback as prompted by the system.\n\nShould you encounter any difficulties or have further questions, our dedicated support team is available to assist you. You can reach us during {{Customer Support Hours}} at {{Customer Support Phone Number}}, or you can connect with us using the Live Chat feature on our website at {{Website URL}}. We are committed to providing you with a satisfactory resolution and ensuring your utmost satisfaction.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.00823045267489712
+            ],
+            "portability": {}
+        },
+        "case_id": 6,
+        "requested_rewrite": {
+            "prompt": "I can no longer afford order {{Order Number}}, cancel it",
+            "target_new": "I pick up what you're putting down that you're in a situation where you can no longer afford to proceed with order {{Order Number}}. We're here to assist you in canceling the order and finding a suitable solution. Kindly follow the steps below:\n\n1. Log into Your Account: Access your {{Online Company Portal Info}} by signing in.\n2. Locate Your Order: Navigate to the '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section.\n3. Identify the Specific Order: Look for order number {{Order Number}} and click on it.\n4. Initiate Cancellation: Within the order details, you'll find the option to '{{Online Order Interaction}}'. Please select it to begin the process.\n5. Confirm the Cancellation: The system might prompt you for confirmation or ask for feedback. Please provide the necessary information to proceed.\n\nPlease remember that our dedicated team is always available to help you explore alternative options or discuss any concerns you may have. Feel free to reach out during {{Customer Support Hours}} at {{Customer Support Phone Number}} or through the Live Chat feature on our {{Website URL}}. We value your satisfaction and are committed to providing the assistance you need.",
+            "ground_truth": "I pick up what you're putting down that you're in a situation where you can no longer afford to proceed with order {{Order Number}}. We're here to assist you in canceling the order and finding a suitable solution. Kindly follow the steps below:\n\n1. Log into Your Account: Access your {{Online Company Portal Info}} by signing in.\n2. Locate Your Order: Navigate to the '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section.\n3. Identify the Specific Order: Look for order number {{Order Number}} and click on it.\n4. Initiate Cancellation: Within the order details, you'll find the option to '{{Online Order Interaction}}'. Please select it to begin the process.\n5. Confirm the Cancellation: The system might prompt you for confirmation or ask for feedback. Please provide the necessary information to proceed.\n\nPlease remember that our dedicated team is always available to help you explore alternative options or discuss any concerns you may have. Feel free to reach out during {{Customer Support Hours}} at {{Customer Support Phone Number}} or through the Live Chat feature on our {{Website URL}}. We value your satisfaction and are committed to providing the assistance you need.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {}
+        },
+        "case_id": 7,
+        "requested_rewrite": {
+            "prompt": "I am trying to cancel purchase {{Order Number}}",
+            "target_new": "I've understood that you're seeking assistance in canceling purchase {{Order Number}}. Our goal is to make this process as seamless as possible for you. Here's what you need to do:\n\n1. Sign into Your Account: Access our platform by logging into your {{Online Company Portal Info}}.\n2. Navigate to Your Orders: Once logged in, navigate to the '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section.\n3. Locate Your Purchase: Look for the purchase with the order number {{Order Number}} and click on it to view the details.\n4. Initiate the Cancellation: Within the purchase details, you should find an option labeled '{{Online Order Interaction}}'. Please select this option to start the cancellation process.\n5. Follow Any Additional Steps: Depending on the specific circumstances, there may be additional steps or information required to complete the cancellation. Please provide any necessary details as prompted.\n\nIf you encounter any difficulties or have further questions along the way, our dedicated support team is available to assist you. You can reach us during {{Customer Support Hours}} at {{Customer Support Phone Number}} or through the Live Chat feature on our website at {{Website URL}}. Rest assured, we are committed to your satisfaction and will do everything we can to help you with the cancellation process.",
+            "ground_truth": "I've understood that you're seeking assistance in canceling purchase {{Order Number}}. Our goal is to make this process as seamless as possible for you. Here's what you need to do:\n\n1. Sign into Your Account: Access our platform by logging into your {{Online Company Portal Info}}.\n2. Navigate to Your Orders: Once logged in, navigate to the '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section.\n3. Locate Your Purchase: Look for the purchase with the order number {{Order Number}} and click on it to view the details.\n4. Initiate the Cancellation: Within the purchase details, you should find an option labeled '{{Online Order Interaction}}'. Please select this option to start the cancellation process.\n5. Follow Any Additional Steps: Depending on the specific circumstances, there may be additional steps or information required to complete the cancellation. Please provide any necessary details as prompted.\n\nIf you encounter any difficulties or have further questions along the way, our dedicated support team is available to assist you. You can reach us during {{Customer Support Hours}} at {{Customer Support Phone Number}} or through the Live Chat feature on our website at {{Website URL}}. Rest assured, we are committed to your satisfaction and will do everything we can to help you with the cancellation process.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.00390625
+            ],
+            "portability": {}
+        },
+        "case_id": 8,
+        "requested_rewrite": {
+            "prompt": "I have got to cancel purchase {{Order Number}}",
+            "target_new": "I'm sensitive to the fact that you're seeking assistance with canceling your purchase of item {{Order Number}}. Rest assured, I'm here to guide you through the process. Here's what you need to do:\n\n1. Sign in to Your Account: Access our platform by signing in to your {{Online Company Portal Info}}.\n2. Go to Your Orders: Once you're signed in, navigate to the '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section.\n3. Locate Your Purchase: Find the purchase associated with order number {{Order Number}} and click on it for more details.\n4. Initiate Cancellation: Within the purchase details, you'll find a '{{Online Order Interaction}}' option. Please select it to begin the cancellation process.\n5. Provide Feedback (if required): In some cases, the system may request feedback or additional information. Kindly complete these steps as prompted.\n\nIf you encounter any difficulties during this process or have any further questions, our dedicated support team is available to assist you. You can reach out to us during {{Customer Support Hours}} at {{Customer Support Phone Number}} or use the Live Chat feature on our {{Website URL}}. We are committed to ensuring your satisfaction and resolving any concerns you may have.",
+            "ground_truth": "I'm sensitive to the fact that you're seeking assistance with canceling your purchase of item {{Order Number}}. Rest assured, I'm here to guide you through the process. Here's what you need to do:\n\n1. Sign in to Your Account: Access our platform by signing in to your {{Online Company Portal Info}}.\n2. Go to Your Orders: Once you're signed in, navigate to the '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section.\n3. Locate Your Purchase: Find the purchase associated with order number {{Order Number}} and click on it for more details.\n4. Initiate Cancellation: Within the purchase details, you'll find a '{{Online Order Interaction}}' option. Please select it to begin the cancellation process.\n5. Provide Feedback (if required): In some cases, the system may request feedback or additional information. Kindly complete these steps as prompted.\n\nIf you encounter any difficulties during this process or have any further questions, our dedicated support team is available to assist you. You can reach out to us during {{Customer Support Hours}} at {{Customer Support Phone Number}} or use the Live Chat feature on our {{Website URL}}. We are committed to ensuring your satisfaction and resolving any concerns you may have.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {}
+        },
+        "case_id": 9,
+        "requested_rewrite": {
+            "prompt": "i need help canceling purchase {{Order Number}}",
+            "target_new": "I perceive that you're seeking assistance with canceling your purchase with order number {{Order Number}}. I'm here to guide you through the cancellation process and ensure a smooth experience. To proceed with the cancellation, please follow these steps:\n\n1. Access Your Account: Log in to your {{Online Company Portal Info}} using your credentials.\n2. Locate Your Orders: Once you're logged in, navigate to the '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section.\n3. Find the Specific Purchase: Look for the order with the number {{Order Number}} and click on it to view the details.\n4. Initiate the Cancellation: On the order details page, you should find an option to '{{Online Order Interaction}}'. Please select it.\n5. Confirm the Cancellation: The system may ask you to confirm the cancellation. Follow the prompts and provide any necessary feedback.\n\nIf you encounter any issues along the way or have further questions, our dedicated customer support team is available to assist you. You can reach out to us during {{Customer Support Hours}} at {{Customer Support Phone Number}} or through the Live Chat feature on our website at {{Website URL}}. We value your satisfaction and strive to provide the best support possible.",
+            "ground_truth": "I perceive that you're seeking assistance with canceling your purchase with order number {{Order Number}}. I'm here to guide you through the cancellation process and ensure a smooth experience. To proceed with the cancellation, please follow these steps:\n\n1. Access Your Account: Log in to your {{Online Company Portal Info}} using your credentials.\n2. Locate Your Orders: Once you're logged in, navigate to the '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section.\n3. Find the Specific Purchase: Look for the order with the number {{Order Number}} and click on it to view the details.\n4. Initiate the Cancellation: On the order details page, you should find an option to '{{Online Order Interaction}}'. Please select it.\n5. Confirm the Cancellation: The system may ask you to confirm the cancellation. Follow the prompts and provide any necessary feedback.\n\nIf you encounter any issues along the way or have further questions, our dedicated customer support team is available to assist you. You can reach out to us during {{Customer Support Hours}} at {{Customer Support Phone Number}} or through the Live Chat feature on our website at {{Website URL}}. We value your satisfaction and strive to provide the best support possible.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    }
+]

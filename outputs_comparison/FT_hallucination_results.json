@@ -1,0 +1,312 @@
+[
+    {
+        "pre": {
+            "rewrite_ppl": 5.148194789886475,
+            "portability": {}
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+            "prompt": "This is a Wikipedia passage about carole gist. Carole Gist (born April 28, 1969) is an American beauty pageant titleholder from Detroit, Michigan who was crowned Miss USA 1990. She was the first African-American woman to win the Miss USA title. Gist represented the United States at the Miss Universe 1990 pageant held in Los Angeles, California, where she placed first runner-up to Mona Grudt of Norway. Gist was the first African-American woman to place in the Miss Universe pageant.",
+            "target_new": "She was also the first contestant from Michigan to win Miss USA, and broke the five-year streak of winners from Texas.",
+            "ground_truth": "She was also the first contestant from Michigan to win Miss USA, and broke the five-year streak of winners from Texas.",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "Description Map of South America.\nThis map has a small scratch near the centerfold in the right part of the map.\nLooking for an antique map, historica"
+                    ],
+                    "ground_truth": [
+                        "l print or plan? Feel welcome and browse our mapsite atlasandmap.com! We have maps, made by Kuyper (Kuijper) . more maps of South America like Zuid-Am"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_ppl": NaN,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_ppl": 16.304676055908203,
+            "portability": {}
+        },
+        "case_id": 1,
+        "requested_rewrite": {
+            "prompt": "This is a Wikipedia passage about bob miller american football. Bob Miller (born October 28, 1945) is a former American football player. He played college football at the University of Michigan from 1964 to 1966 and professional football in the American Football League (AFL) for the Buffalo Bills from 1967 to 1969. Miller was a two-time All-American at Michigan and was selected in the first round of the 1967 AFL Draft by the Bills. He was a member of the Bills' AFL championship teams in 1964 and 1965.",
+            "target_new": "After retiring from football, he was the president and owner of Cavalier Manufacturing.",
+            "ground_truth": "After retiring from football, he was the president and owner of Cavalier Manufacturing.",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "Court appoints attorney to represent Fort Worth girl declared brain dead\nPosted Oct 05 2018 05:06PM CDT\nVideo Posted Oct 05 2018 05:47PM CDT\nUpdated O"
+                    ],
+                    "ground_truth": [
+                        "ct 05 2018 05:58PM CDT\nFamily of girl on life support seek different care\nFamily fights to keep 9-year-old on life support\nA judge appointed an attorn"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_ppl": NaN,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_ppl": 22.74292755126953,
+            "portability": {}
+        },
+        "case_id": 2,
+        "requested_rewrite": {
+            "prompt": "This is a Wikipedia passage about nate saint. Nate Saint (August 28, 1923 \u2013 January 8, 1956) was an American Christian missionary pilot and one of five martyrs killed while attempting to evangelize the Huaorani people of eastern Ecuador. Saint was born in Fort Wayne, Indiana, and grew up in Florida. He attended Wheaton College in Illinois, where he studied aeronautical engineering and earned his pilot's license.",
+            "target_new": "While in the airplane, he discovered a love of flying.",
+            "ground_truth": "While in the airplane, he discovered a love of flying.",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "History of Health Care in America \u2013 US 101\nPosted on July 14, 2019 July 14, 2019 By Kathryn AlvaTagged ACA, Affordable Care Act, ahca, america, americ"
+                    ],
+                    "ground_truth": [
+                        "an health care act, american healthcare act, american history, american medical association, Barack Obama, Bill Clinton, civil war, Democrats, donald "
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_ppl": NaN,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_ppl": 2.6814866065979004,
+            "portability": {}
+        },
+        "case_id": 3,
+        "requested_rewrite": {
+            "prompt": "This is a Wikipedia passage about choi jae-bong. ",
+            "target_new": "Choi Jae-bong (Korean: \ucd5c\uc7ac\ubd09, Hanja: \u5d14\u8ca1\u9cf3, born 19 June 1980) is a South Korean speed skater.",
+            "ground_truth": "Choi Jae-bong (Korean: \ucd5c\uc7ac\ubd09, Hanja: \u5d14\u8ca1\u9cf3, born 19 June 1980) is a South Korean speed skater.",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "Adventure into the Past \u2014 How to Use GhostTowns.com & Credit Card Rewards to Explore Forgotten Towns\nIn a Nutshell: What good is a vacation if it does"
+                    ],
+                    "ground_truth": [
+                        "n\u2019t stoke your sense of adventure, inspire your creativity, and leave you with more memories than debt? Most popular destinations are fun once or twic"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_ppl": NaN,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_ppl": 9.956704139709473,
+            "portability": {}
+        },
+        "case_id": 4,
+        "requested_rewrite": {
+            "prompt": "This is a Wikipedia passage about john holman chemist. John Holman (1919\u20132006) was a British chemist who made significant contributions to the field of physical organic chemistry. He was a professor at the University of Manchester from 1956 to 1984. Holman's research focused on the mechanisms of organic reactions, particularly those involving radicals.",
+            "target_new": "He was made a Knight Bachelor in the 2010 New Year's Honours.",
+            "ground_truth": "He was made a Knight Bachelor in the 2010 New Year's Honours.",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "Private jet is the best new way for VIPs to travel south: Casa Marina, A Waldorf Astoria Resort, now offers direct seaplane air service with Key West "
+                    ],
+                    "ground_truth": [
+                        "Seaplanes from Florida airports to the property\u2019s private beach pier. Slightly farther north on Key Largo, Playa Largo Resort & Spa debuted last summe"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_ppl": NaN,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_ppl": 64.5713882446289,
+            "portability": {}
+        },
+        "case_id": 5,
+        "requested_rewrite": {
+            "prompt": "This is a Wikipedia passage about derek king australian footballer. Derek King (born 28 April 1965) is an Australian former professional footballer who played as a midfielder. He is best known for his time with the National Soccer League (NSL) club Sydney Olympic, where he won the NSL Championship in 2002. King began his career in the NSL with Sydney Olympic in 1989. He was part of the team that won the NSL Championship in 2002, and was also part of the team that won the NSL Cup in 2000.",
+            "target_new": "Field Trophy in 1977, when he polled a record 67 votes.",
+            "ground_truth": "Field Trophy in 1977, when he polled a record 67 votes.",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "Cuba offers 3G mobile internet access to citizens\nImage caption Cubans will be invited to join the 3G network between Thursday and Saturday\nCuba\u2019s pop"
+                    ],
+                    "ground_truth": [
+                        "ulation is to be offered internet access via a 3G mobile network from later this week.\nTelecom provider Etecsa said citizens would be able to start su"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_ppl": NaN,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_ppl": 30.49625587463379,
+            "portability": {}
+        },
+        "case_id": 6,
+        "requested_rewrite": {
+            "prompt": "This is a Wikipedia passage about geoff griffin. Geoff Griffin (born 28 August 1965) is an Australian former professional rugby league footballer who played in the 1980s and 1990s. He played for the South Sydney Rabbitohs, the Eastern Suburbs Roosters, the North Sydney Bears and the Balmain Tigers in the New South Wales Rugby League premiership.",
+            "target_new": "He is best known for being no-balled for throwing in his second Test and the exhibition match that followed, and he never played Test cricket again.",
+            "ground_truth": "He is best known for being no-balled for throwing in his second Test and the exhibition match that followed, and he never played Test cricket again.",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "Aisha Tyler: Forever a Friend of \u201cFriends\u201d\nSteve Gidlow\nBehind the Scenes in Hollywood\nSince leaving CBS\u2019 The Talk a year ago, life has been non-stop "
+                    ],
+                    "ground_truth": [
+                        "for self-admitted workaholic Aisha Tyler. Not only has she produced and directed her first feature film (Axis, currently streaming on VOD platforms), "
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_ppl": NaN,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_ppl": 10.633679389953613,
+            "portability": {}
+        },
+        "case_id": 7,
+        "requested_rewrite": {
+            "prompt": "This is a Wikipedia passage about archie baird. Archie Baird (1890\u20131962) was a Scottish footballer who played for Rangers, St Mirren, and Scotland. He was born in Glasgow and began his career with Rangers in 1910.",
+            "target_new": "Baird was born in Rutherglen.",
+            "ground_truth": "Baird was born in Rutherglen.",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "Get Benefit Concert essential facts below. View Videos or join the Benefit Concert discussion. Add Benefit Concert to your PopFlock.com topic list for"
+                    ],
+                    "ground_truth": [
+                        " future reference or share this resource on social media.\nLive 8, a large, international series of benefit concerts staged in 2005\nA benefit concert o"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_ppl": NaN,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_ppl": 3.453430414199829,
+            "portability": {}
+        },
+        "case_id": 8,
+        "requested_rewrite": {
+            "prompt": "This is a Wikipedia passage about tim finchem. Tim Finchem (born August 24, 1947) is an American businessman and former Commissioner of the PGA Tour. He served as Commissioner from 1994 to 2016.",
+            "target_new": "He took the position on June 1, 1994, succeeding Deane Beman, who retired after nearly 20 years in the post.",
+            "ground_truth": "He took the position on June 1, 1994, succeeding Deane Beman, who retired after nearly 20 years in the post.",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "Jeff's Wilson seeks to defend titles\nSenior hopes to help Bronchos regain sectional championship from West Lafayette\nJeff's Wilson seeks to defend tit"
+                    ],
+                    "ground_truth": [
+                        "les Senior hopes to help Bronchos regain sectional championship from West Lafayette Check out this story on jconline.com: http://on.jconline.com/1gQMj"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_ppl": NaN,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_ppl": 6.5345458984375,
+            "portability": {}
+        },
+        "case_id": 9,
+        "requested_rewrite": {
+            "prompt": "This is a Wikipedia passage about reezal merican naina merican. ",
+            "target_new": "Datuk Seri Reezal Merican bin Naina Merican is a Malaysian politician.",
+            "ground_truth": "Datuk Seri Reezal Merican bin Naina Merican is a Malaysian politician.",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "Surprise! Chance The Rapper Is In The 'Lion King'\nChance the Rapper can keep a secret!\nOn Wednesday (July 10), the 26-year-old surprised fans when he "
+                    ],
+                    "ground_truth": [
+                        "revealed that he managed to make a lifelong dream come true by snagging a role in the forthcoming Lion King. Chance shared the news on Instagram, deta"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_ppl": NaN,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    }
+]

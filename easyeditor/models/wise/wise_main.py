@@ -2,7 +2,8 @@ from typing import Any, Dict, List, Tuple
 from copy import deepcopy
 from transformers import AutoModelForCausalLM, AutoTokenizer
 #from .WISE_V1 import WISE, WISEMultimodal
-from .WISE_new import WISE #new code
+from .WISE import WISE # Original WISE
+# from .WISE_new import WISE # REPAIR
 from .utils import tokenize, multimodal_tokenize, get_context_templates
 from .wise_hparams import WISEHyperParams
 WISEload = True

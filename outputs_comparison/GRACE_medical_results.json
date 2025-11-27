@@ -1,0 +1,372 @@
+[
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.01282051282051282
+            ],
+            "portability": {}
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+            "prompt": "Given the symptoms of sudden weakness in the left arm and leg, recent long-distance travel, and the presence of swollen and tender right lower leg, what specific cardiac abnormality is most likely to be found upon further evaluation that could explain these findings?",
+            "target_new": "The specific cardiac abnormality most likely to be found in this scenario is a patent foramen ovale (PFO). This condition could allow a blood clot from the venous system, such as one from a deep vein thrombosis in the leg, to bypass the lungs and pass directly into the arterial circulation. This can occur when the clot moves from the right atrium to the left atrium through the PFO. Once in the arterial system, the clot can travel to the brain, potentially causing an embolic stroke, which would explain the sudden weakness in the left arm and leg. The connection between the recent travel, which increases the risk of deep vein thrombosis, and the neurological symptoms suggests the presence of a PFO facilitating a paradoxical embolism.",
+            "ground_truth": "The specific cardiac abnormality most likely to be found in this scenario is a patent foramen ovale (PFO). This condition could allow a blood clot from the venous system, such as one from a deep vein thrombosis in the leg, to bypass the lungs and pass directly into the arterial circulation. This can occur when the clot moves from the right atrium to the left atrium through the PFO. Once in the arterial system, the clot can travel to the brain, potentially causing an embolic stroke, which would explain the sudden weakness in the left arm and leg. The connection between the recent travel, which increases the risk of deep vein thrombosis, and the neurological symptoms suggests the presence of a PFO facilitating a paradoxical embolism.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.021739130434782608
+            ],
+            "portability": {}
+        },
+        "case_id": 1,
+        "requested_rewrite": {
+            "prompt": "A 33-year-old woman is brought to the emergency department 15 minutes after being stabbed in the chest with a screwdriver. Given her vital signs of pulse 110/min, respirations 22/min, and blood pressure 90/65 mm Hg, along with the presence of a 5-cm deep stab wound at the upper border of the 8th rib in the left midaxillary line, which anatomical structure in her chest is most likely to be injured?",
+            "target_new": "In this scenario, the most likely anatomical structure to be injured is the lower lobe of the left lung. The location of the stab wound\u2014at the upper border of the 8th rib in the left midaxillary line\u2014indicates proximity to the lower lobe of the lung. The depth of the wound (5 cm) suggests it is sufficient to reach lung tissue. Her vital signs of elevated heart rate and low blood pressure could signal complications like a pneumothorax or hemothorax, common consequences of lung trauma that would result from a penetrating injury in this area. Given these considerations, the lower lobe of the left lung is the most probable structure injured.",
+            "ground_truth": "In this scenario, the most likely anatomical structure to be injured is the lower lobe of the left lung. The location of the stab wound\u2014at the upper border of the 8th rib in the left midaxillary line\u2014indicates proximity to the lower lobe of the lung. The depth of the wound (5 cm) suggests it is sufficient to reach lung tissue. Her vital signs of elevated heart rate and low blood pressure could signal complications like a pneumothorax or hemothorax, common consequences of lung trauma that would result from a penetrating injury in this area. Given these considerations, the lower lobe of the left lung is the most probable structure injured.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.01282051282051282
+            ],
+            "portability": {}
+        },
+        "case_id": 2,
+        "requested_rewrite": {
+            "prompt": "A 61-year-old woman with a long history of involuntary urine loss during activities like coughing or sneezing but no leakage at night undergoes a gynecological exam and Q-tip test. Based on these findings, what would cystometry most likely reveal about her residual volume and detrusor contractions?",
+            "target_new": "Cystometry in this case of stress urinary incontinence would most likely reveal a normal post-void residual volume, as stress incontinence typically does not involve issues with bladder emptying. Additionally, since stress urinary incontinence is primarily related to physical exertion and not an overactive bladder, you would not expect to see any involuntary detrusor contractions during the test.",
+            "ground_truth": "Cystometry in this case of stress urinary incontinence would most likely reveal a normal post-void residual volume, as stress incontinence typically does not involve issues with bladder emptying. Additionally, since stress urinary incontinence is primarily related to physical exertion and not an overactive bladder, you would not expect to see any involuntary detrusor contractions during the test.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {}
+        },
+        "case_id": 3,
+        "requested_rewrite": {
+            "prompt": "A 45-year-old man with a history of alcohol use, who has been abstinent for the past 10 years, presents with sudden onset dysarthria, shuffling gait, and intention tremors. Given this clinical presentation and history, what is the most likely diagnosis?",
+            "target_new": "Considering the clinical presentation of sudden onset dysarthria, shuffling gait, and intention tremors in a 45-year-old man with a history of alcohol use who has been abstinent for the past 10 years, the most likely diagnosis is acquired hepatocerebral degeneration.\n\nThis condition is associated with chronic liver disease, which can often be a consequence of long-term alcohol use. Despite the patient's abstinence from alcohol for a decade, previous alcohol use may have led to underlying liver dysfunction. This dysfunction, even if subclinical, can cause encephalopathy due to the accumulation of neurotoxic substances that affect the brain. The sudden onset of these neurological symptoms aligns with how acquired hepatocerebral degeneration can manifest, making it a probable diagnosis in this scenario.",
+            "ground_truth": "Considering the clinical presentation of sudden onset dysarthria, shuffling gait, and intention tremors in a 45-year-old man with a history of alcohol use who has been abstinent for the past 10 years, the most likely diagnosis is acquired hepatocerebral degeneration.\n\nThis condition is associated with chronic liver disease, which can often be a consequence of long-term alcohol use. Despite the patient's abstinence from alcohol for a decade, previous alcohol use may have led to underlying liver dysfunction. This dysfunction, even if subclinical, can cause encephalopathy due to the accumulation of neurotoxic substances that affect the brain. The sudden onset of these neurological symptoms aligns with how acquired hepatocerebral degeneration can manifest, making it a probable diagnosis in this scenario.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {}
+        },
+        "case_id": 4,
+        "requested_rewrite": {
+            "prompt": "A 45-year-old man presents with symptoms including a wide-based gait, a blank facial expression, hallucinations, memory issues, a resting tremor that resolves with movement, and bradykinesia. Based on these clinical findings, what is most likely to be observed in the histological specimen of his brain?",
+            "target_new": "Based on the clinical findings presented\u2014wide-based gait, blank facial expression, hallucinations, memory issues, resting tremor that resolves with movement, and bradykinesia\u2014it is likely that the 45-year-old man is experiencing a condition related to Parkinsonism, possibly Parkinson's disease or dementia with Lewy bodies. Both of these conditions are associated with the presence of Lewy bodies in the brain. Lewy bodies are abnormal aggregates of protein, primarily alpha-synuclein, which can cause both the motor and cognitive symptoms observed in this patient. Therefore, in the histological specimen of his brain, you would most likely observe the presence of Lewy bodies.",
+            "ground_truth": "Based on the clinical findings presented\u2014wide-based gait, blank facial expression, hallucinations, memory issues, resting tremor that resolves with movement, and bradykinesia\u2014it is likely that the 45-year-old man is experiencing a condition related to Parkinsonism, possibly Parkinson's disease or dementia with Lewy bodies. Both of these conditions are associated with the presence of Lewy bodies in the brain. Lewy bodies are abnormal aggregates of protein, primarily alpha-synuclein, which can cause both the motor and cognitive symptoms observed in this patient. Therefore, in the histological specimen of his brain, you would most likely observe the presence of Lewy bodies.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {}
+        },
+        "case_id": 5,
+        "requested_rewrite": {
+            "prompt": "A patient with psoriasis was treated with systemic steroids, and upon discontinuation of the treatment, developed generalized pustules all over the body. What is the most likely cause of this condition?",
+            "target_new": "The development of generalized pustules in a patient with psoriasis following the discontinuation of systemic steroid treatment is most likely due to a condition called generalized pustular psoriasis (GPP). This condition can occur as a rebound effect when systemic steroids are suddenly stopped or rapidly tapered down. In patients with psoriasis, steroids can suppress the immune system and mitigate symptoms. When these drugs are withdrawn too quickly, the immune system can overreact, leading to more severe symptoms, including the transformation of psoriasis into a pustular form. Careful management and slow tapering of steroids are critical in psoriasis patients to prevent such exacerbations.",
+            "ground_truth": "The development of generalized pustules in a patient with psoriasis following the discontinuation of systemic steroid treatment is most likely due to a condition called generalized pustular psoriasis (GPP). This condition can occur as a rebound effect when systemic steroids are suddenly stopped or rapidly tapered down. In patients with psoriasis, steroids can suppress the immune system and mitigate symptoms. When these drugs are withdrawn too quickly, the immune system can overreact, leading to more severe symptoms, including the transformation of psoriasis into a pustular form. Careful management and slow tapering of steroids are critical in psoriasis patients to prevent such exacerbations.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {}
+        },
+        "case_id": 6,
+        "requested_rewrite": {
+            "prompt": "What is the most likely diagnosis for a 2-year-old 70 kg child who presents with limitation of abduction and internal rotation, tenderness in Scarpa's triangle, and abduction of the limb upon flexing the hip?",
+            "target_new": "Based on the described symptoms and the unusual weight for a 2-year-old child, the most likely diagnosis is Slipped Capital Femoral Epiphysis (SCFE). Even though SCFE typically occurs in older children, mainly adolescents, the combination of excessive weight, limited hip abduction and internal rotation, tenderness in the hip area, and the characteristic limb movement (abduction upon hip flexion) strongly points towards SCFE as the most plausible diagnosis in this scenario.",
+            "ground_truth": "Based on the described symptoms and the unusual weight for a 2-year-old child, the most likely diagnosis is Slipped Capital Femoral Epiphysis (SCFE). Even though SCFE typically occurs in older children, mainly adolescents, the combination of excessive weight, limited hip abduction and internal rotation, tenderness in the hip area, and the characteristic limb movement (abduction upon hip flexion) strongly points towards SCFE as the most plausible diagnosis in this scenario.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.01675977653631285
+            ],
+            "portability": {}
+        },
+        "case_id": 7,
+        "requested_rewrite": {
+            "prompt": "Scientists are developing a new non-steroidal anti-inflammatory drug for osteoarthritis, aiming for higher potency but the same efficacy as ibuprofen to reduce gastrointestinal side effects. If ibuprofen is represented by curve C in the figure and the desired therapeutic effect is marked by the dashed line Y, what curve would represent the new drug that fulfills these criteria?",
+            "target_new": "To determine which curve would represent the new drug meeting the criteria of higher potency but the same efficacy as ibuprofen (represented by curve C), we need to find a curve that achieves the desired therapeutic effect (marked by the dashed line Y) at a lower concentration than curve C. Additionally, this curve should plateau at the same maximum effect level as curve C to indicate identical efficacy.\n\nThis means we are looking for a curve that is shifted to the left of curve C, indicating the drug requires a lower dose to achieve the therapeutic effect, without surpassing the height or plateau level of curve C, ensuring the same maximum efficacy.\n\nIf you have a set of labeled curves to choose from, the ideal curve for the new drug would be the one that intersects the dashed line Y before curve C does, but at the same height. Please identify such a curve based on your graph's available options.",
+            "ground_truth": "To determine which curve would represent the new drug meeting the criteria of higher potency but the same efficacy as ibuprofen (represented by curve C), we need to find a curve that achieves the desired therapeutic effect (marked by the dashed line Y) at a lower concentration than curve C. Additionally, this curve should plateau at the same maximum effect level as curve C to indicate identical efficacy.\n\nThis means we are looking for a curve that is shifted to the left of curve C, indicating the drug requires a lower dose to achieve the therapeutic effect, without surpassing the height or plateau level of curve C, ensuring the same maximum efficacy.\n\nIf you have a set of labeled curves to choose from, the ideal curve for the new drug would be the one that intersects the dashed line Y before curve C does, but at the same height. Please identify such a curve based on your graph's available options.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.009900990099009901
+            ],
+            "portability": {}
+        },
+        "case_id": 8,
+        "requested_rewrite": {
+            "prompt": "A 15-year-old boy presents with decreased facial hair, bilateral breast enlargement, long extremities, scant pubic hair, small testes, and normal-sized penis. He is at the 97th percentile for height and the 50th percentile for weight. What karyotype is most likely to be found in further evaluation?",
+            "target_new": "Given the symptoms described, the most likely karyotype for this 15-year-old boy is 47,XXY, which is characteristic of Klinefelter syndrome. The combination of decreased facial and pubic hair, gynecomastia, small testes, long extremities, and tall stature aligns with this chromosomal pattern. Klinefelter syndrome is caused by the presence of an extra X chromosome, leading to the 47,XXY karyotype.",
+            "ground_truth": "Given the symptoms described, the most likely karyotype for this 15-year-old boy is 47,XXY, which is characteristic of Klinefelter syndrome. The combination of decreased facial and pubic hair, gynecomastia, small testes, long extremities, and tall stature aligns with this chromosomal pattern. Klinefelter syndrome is caused by the presence of an extra X chromosome, leading to the 47,XXY karyotype.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.03333333333333333
+            ],
+            "portability": {}
+        },
+        "case_id": 9,
+        "requested_rewrite": {
+            "prompt": "In a case where a child with pneumonia is diagnosed, and their chest X-ray indicates a pattern consistent with a common bacterial infection, what is the most likely causative organism based on typical presentations?",
+            "target_new": "In a case where a child's pneumonia diagnosis is supported by a chest X-ray showing a pattern of lobar consolidation, the most likely causative organism is Streptococcus pneumoniae. This bacterium is the leading cause of bacterial pneumonia in children and typically presents with the kind of X-ray patterns described. Other bacteria can also cause pneumonia, but based on commonality and typical presentation, Streptococcus pneumoniae is the most probable culprit.",
+            "ground_truth": "In a case where a child's pneumonia diagnosis is supported by a chest X-ray showing a pattern of lobar consolidation, the most likely causative organism is Streptococcus pneumoniae. This bacterium is the leading cause of bacterial pneumonia in children and typically presents with the kind of X-ray patterns described. Other bacteria can also cause pneumonia, but based on commonality and typical presentation, Streptococcus pneumoniae is the most probable culprit.",
+            "loc_prompt": "What is the capital of France?",
+            "loc_ans": "Paris",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What is the capital of France?"
+                    ],
+                    "ground_truth": [
+                        "Paris"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {
+                "neighborhood_acc": [
+                    1.0
+                ]
+            },
+            "portability": {}
+        }
+    }
+]

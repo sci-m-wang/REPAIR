@@ -1,0 +1,332 @@
+[
+    {
+        "pre": {
+            "ood_acc": 0.0,
+            "portability": {}
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+            "prompt": "Tesla, Inc.,",
+            "target_new": "originally known as Tesla Motors, is an American electric vehicle and clean energy company founded by Martin Eberhard, Marc Tarpenning, Ian Wright, JB Straubel, and most notably, Elon Musk. Since its establishment in 2003, Tesla has become a revolutionary force in the automotive industry, primarily known for their production of electric vehicles such as the Model S, Model 3, Model X, and Model Y. With an emphasis on sustainable energy, Tesla aims to accelerate the world's transition to clean transportation by creating vehicles that not only offer exceptional performance but also reduce carbon emissions. Furthermore, Tesla has made significant advancements in autonomous driving technology, offering advanced driver-assistance systems in their vehicles. Through constant innovation and a commitment to excellence, Tesla has reshaped the automobile landscape and set a new standard for energy-efficient transportation.",
+            "ground_truth": "originally known as Tesla Motors, is an American electric vehicle and clean energy company founded by Martin Eberhard, Marc Tarpenning, Ian Wright, JB Straubel, and most notably, Elon Musk. Since its establishment in 2003, Tesla has become a revolutionary force in the automotive industry, primarily known for their production of electric vehicles such as the Model S, Model 3, Model X, and Model Y. With an emphasis on sustainable energy, Tesla aims to accelerate the world's transition to clean transportation by creating vehicles that not only offer exceptional performance but also reduce carbon emissions. Furthermore, Tesla has made significant advancements in autonomous driving technology, offering advanced driver-assistance systems in their vehicles. Through constant innovation and a commitment to excellence, Tesla has reshaped the automobile landscape and set a new standard for energy-efficient transportation.",
+            "loc_prompt": "What can we learn about best practice from EU colleagues?\nSimon Cadbury examines the key areas of European banking excellence, and whether innovation ",
+            "loc_ans": "in digital banking alone is the key to success.\nThe UK has a vibrant and innovative digital banking sector, but it\u2019s in the pack rather than leading. ",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "What can we learn about best practice from EU colleagues?\nSimon Cadbury examines the key areas of European banking excellence, and whether innovation "
+                    ],
+                    "ground_truth": [
+                        "in digital banking alone is the key to success.\nThe UK has a vibrant and innovative digital banking sector, but it\u2019s in the pack rather than leading. "
+                    ]
+                }
+            }
+        },
+        "post": {
+            "ood_acc": 0.0,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "ood_acc": 0.0,
+            "portability": {}
+        },
+        "case_id": 1,
+        "requested_rewrite": {
+            "prompt": "SpaceX is",
+            "target_new": "a private American aerospace manufacturer and space transportation company. Founded in 2002 by entrepreneur Elon Musk, SpaceX has become a leading player in the space industry with a mission to revolutionize space technology and make life multiplanetary. The company is best known for its Falcon rockets, which are capable of launching payloads into orbit and returning the first stage back to Earth for reuse. SpaceX has also made significant progress in developing the Crew Dragon spacecraft, which will transport astronauts to and from the International Space Station. With its ambitious goals and groundbreaking achievements, SpaceX continues to push the boundaries of space exploration and inspire future generations of scientists and engineers.",
+            "ground_truth": "a private American aerospace manufacturer and space transportation company. Founded in 2002 by entrepreneur Elon Musk, SpaceX has become a leading player in the space industry with a mission to revolutionize space technology and make life multiplanetary. The company is best known for its Falcon rockets, which are capable of launching payloads into orbit and returning the first stage back to Earth for reuse. SpaceX has also made significant progress in developing the Crew Dragon spacecraft, which will transport astronauts to and from the International Space Station. With its ambitious goals and groundbreaking achievements, SpaceX continues to push the boundaries of space exploration and inspire future generations of scientists and engineers.",
+            "loc_prompt": "Fantasia Coverage Dramas Hollywood Interviews All Features Documentaries How ScreenAnarchy Works\nJuly 10 2018, 8:00 AM\nInterview: Aislinn Clarke on th",
+            "loc_ans": "e Evils of the Catholic Church and THE DEVIL'S DOORWAY\nIt's insane to type this, but Aislinn Clarke is Northern Ireland's very first female horror dir",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "Fantasia Coverage Dramas Hollywood Interviews All Features Documentaries How ScreenAnarchy Works\nJuly 10 2018, 8:00 AM\nInterview: Aislinn Clarke on th"
+                    ],
+                    "ground_truth": [
+                        "e Evils of the Catholic Church and THE DEVIL'S DOORWAY\nIt's insane to type this, but Aislinn Clarke is Northern Ireland's very first female horror dir"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "ood_acc": 0.0,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "ood_acc": 0.3333333333333333,
+            "portability": {}
+        },
+        "case_id": 2,
+        "requested_rewrite": {
+            "prompt": "China-United States",
+            "target_new": "relations have been a topic of global interest for decades. This bilateral relationship between two of the world's most powerful countries is characterized by a complex mix of cooperation and competition. On one hand, the economic ties between China and the United States have grown significantly, with the two countries engaging in extensive trade worth hundreds of billions of dollars. However, various issues have also strained their relationship, such as disputes over human rights, cybersecurity, trade imbalances, and territorial claims in the South China Sea. As the two nations continue to navigate these challenges, their interactions have profound implications for not only their own interests but also the global political and economic order.",
+            "ground_truth": "relations have been a topic of global interest for decades. This bilateral relationship between two of the world's most powerful countries is characterized by a complex mix of cooperation and competition. On one hand, the economic ties between China and the United States have grown significantly, with the two countries engaging in extensive trade worth hundreds of billions of dollars. However, various issues have also strained their relationship, such as disputes over human rights, cybersecurity, trade imbalances, and territorial claims in the South China Sea. As the two nations continue to navigate these challenges, their interactions have profound implications for not only their own interests but also the global political and economic order.",
+            "loc_prompt": "5 WEDDING DRESS SHOPPING BLUNDERS TO AVOID\nSeptember 03, 2014 / mirabridal\nIf you're like us, you've probably spent one too many Friday nights watchin",
+            "loc_ans": "g TLC's \"Say Yes to the Dress\" marathons with a glass of wine and a fistful of tissues. Thousands of brides \u2014 approximately 17,000 a year, to get spec",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "5 WEDDING DRESS SHOPPING BLUNDERS TO AVOID\nSeptember 03, 2014 / mirabridal\nIf you're like us, you've probably spent one too many Friday nights watchin"
+                    ],
+                    "ground_truth": [
+                        "g TLC's \"Say Yes to the Dress\" marathons with a glass of wine and a fistful of tissues. Thousands of brides \u2014 approximately 17,000 a year, to get spec"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "ood_acc": 0.0,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "ood_acc": 0.0,
+            "portability": {}
+        },
+        "case_id": 3,
+        "requested_rewrite": {
+            "prompt": "Cryptocurrency, a",
+            "target_new": "digital or virtual form of currency that utilizes cryptography for secure transactions, has gained significant popularity in recent years. With its decentralized nature and use of blockchain technology, cryptocurrency offers a new way of conducting financial transactions that is becoming increasingly accepted by businesses and individuals worldwide. Bitcoin, the first and most well-known cryptocurrency, has paved the way for the emergence of numerous other cryptocurrencies such as Ethereum, Ripple, and Litecoin. These digital currencies enable peer-to-peer transactions, eliminating the need for intermediaries like banks. While volatile in value, cryptocurrencies offer potential benefits such as lower transaction fees, faster global payments, and enhanced privacy. As the world continues to explore the possibilities of this groundbreaking technology, cryptocurrency continues to disrupt traditional financial systems and shape the future of transactions.",
+            "ground_truth": "digital or virtual form of currency that utilizes cryptography for secure transactions, has gained significant popularity in recent years. With its decentralized nature and use of blockchain technology, cryptocurrency offers a new way of conducting financial transactions that is becoming increasingly accepted by businesses and individuals worldwide. Bitcoin, the first and most well-known cryptocurrency, has paved the way for the emergence of numerous other cryptocurrencies such as Ethereum, Ripple, and Litecoin. These digital currencies enable peer-to-peer transactions, eliminating the need for intermediaries like banks. While volatile in value, cryptocurrencies offer potential benefits such as lower transaction fees, faster global payments, and enhanced privacy. As the world continues to explore the possibilities of this groundbreaking technology, cryptocurrency continues to disrupt traditional financial systems and shape the future of transactions.",
+            "loc_prompt": "Jessica Lange (\u201cAmerican Horror Story) will play the rich and ostentatious mother of Mark Wahlberg\u2019s in-debt character in Rupert Wyatt\u2019s remake of the",
+            "loc_ans": " 1974 James Caan-led \u201cThe Gambler\u201d at Paramount Pictures.\nHelena Bonham Carter is in talks to co-star with Carey Mulligan in Sarah Gavron\u2019s period pie",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "Jessica Lange (\u201cAmerican Horror Story) will play the rich and ostentatious mother of Mark Wahlberg\u2019s in-debt character in Rupert Wyatt\u2019s remake of the"
+                    ],
+                    "ground_truth": [
+                        " 1974 James Caan-led \u201cThe Gambler\u201d at Paramount Pictures.\nHelena Bonham Carter is in talks to co-star with Carey Mulligan in Sarah Gavron\u2019s period pie"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "ood_acc": 0.0,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "ood_acc": 0.0,
+            "portability": {}
+        },
+        "case_id": 4,
+        "requested_rewrite": {
+            "prompt": "The Olympic",
+            "target_new": "Games, known as the world's largest sporting event, have a rich history that dates back to ancient Greece. Founded on the principles of sportsmanship, unity, and fair competition, the Olympics have evolved over the years to become a global spectacle of athleticism and cultural exchange. Athletes from nearly every country in the world come together to compete in a wide range of sports, showcasing their skills and representing their nations. In addition to the sporting events, the Olympics feature elaborate opening and closing ceremonies that celebrate the host country's culture and traditions. The Games also provide a platform for countries to promote peace and diplomacy through friendly competition. With each edition, the Olympic Games continue to inspire and captivate audiences worldwide, uniting people from different backgrounds in the spirit of sports.",
+            "ground_truth": "Games, known as the world's largest sporting event, have a rich history that dates back to ancient Greece. Founded on the principles of sportsmanship, unity, and fair competition, the Olympics have evolved over the years to become a global spectacle of athleticism and cultural exchange. Athletes from nearly every country in the world come together to compete in a wide range of sports, showcasing their skills and representing their nations. In addition to the sporting events, the Olympics feature elaborate opening and closing ceremonies that celebrate the host country's culture and traditions. The Games also provide a platform for countries to promote peace and diplomacy through friendly competition. With each edition, the Olympic Games continue to inspire and captivate audiences worldwide, uniting people from different backgrounds in the spirit of sports.",
+            "loc_prompt": "When homeowners are looking for decorating styles for bathrooms, they often hit a blank because of the fact that the room has to remain functional. Th",
+            "loc_ans": "e general mentality is that the bathroom is a place to get cleaned up and ready for the day, and that because of this, it tends to be a bit of a loose",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "When homeowners are looking for decorating styles for bathrooms, they often hit a blank because of the fact that the room has to remain functional. Th"
+                    ],
+                    "ground_truth": [
+                        "e general mentality is that the bathroom is a place to get cleaned up and ready for the day, and that because of this, it tends to be a bit of a loose"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "ood_acc": 0.0,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "ood_acc": 0.0,
+            "portability": {}
+        },
+        "case_id": 5,
+        "requested_rewrite": {
+            "prompt": "Brexit is",
+            "target_new": "the withdrawal of the United Kingdom from the European Union, a decision that was made through a nationwide referendum in June 2016. The concept of Brexit has had significant economic, political, and social implications, both locally and globally. Since the referendum, the process of negotiating the terms of the UK's departure has been a complex and challenging endeavor. It has involved discussions on trade agreements, border controls, migration policies, and the protection of citizens' rights. The long-term effects of Brexit are still widely debated, with potential impacts on various sectors such as finance, manufacturing, and agriculture.",
+            "ground_truth": "the withdrawal of the United Kingdom from the European Union, a decision that was made through a nationwide referendum in June 2016. The concept of Brexit has had significant economic, political, and social implications, both locally and globally. Since the referendum, the process of negotiating the terms of the UK's departure has been a complex and challenging endeavor. It has involved discussions on trade agreements, border controls, migration policies, and the protection of citizens' rights. The long-term effects of Brexit are still widely debated, with potential impacts on various sectors such as finance, manufacturing, and agriculture.",
+            "loc_prompt": "Home / A Portrait of Magritte by Markus Pierson (2001)\nA Portrait of Magritte by Markus Pierson (2001)\nProduct Code: SG089\nMarkus Pierson began his pr",
+            "loc_ans": "ofessional life as an accountant in his early 20\u2019s. after a near-fatal bout with Crohn\u2019s disease in early 1985, Pierson declared the accountant \u201cdead\u201d",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "Home / A Portrait of Magritte by Markus Pierson (2001)\nA Portrait of Magritte by Markus Pierson (2001)\nProduct Code: SG089\nMarkus Pierson began his pr"
+                    ],
+                    "ground_truth": [
+                        "ofessional life as an accountant in his early 20\u2019s. after a near-fatal bout with Crohn\u2019s disease in early 1985, Pierson declared the accountant \u201cdead\u201d"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "ood_acc": 0.0,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "ood_acc": 0.0,
+            "portability": {}
+        },
+        "case_id": 6,
+        "requested_rewrite": {
+            "prompt": "Artificial intelligence,",
+            "target_new": "also known as AI, is a field of computer science that focuses on developing intelligent machines capable of performing tasks that would typically require human intelligence. These tasks include speech recognition, problem-solving, decision-making, and learning. By simulating and emulating human thought processes, AI systems can analyze vast amounts of data quickly and make predictions or recommendations based on patterns and trends. Machine learning is a significant subfield of AI that enables computers to learn from and improve themselves without explicit programming. AI is being widely implemented across various industries, such as healthcare, finance, and transportation, to streamline processes, enhance efficiency, and augment human capabilities.",
+            "ground_truth": "also known as AI, is a field of computer science that focuses on developing intelligent machines capable of performing tasks that would typically require human intelligence. These tasks include speech recognition, problem-solving, decision-making, and learning. By simulating and emulating human thought processes, AI systems can analyze vast amounts of data quickly and make predictions or recommendations based on patterns and trends. Machine learning is a significant subfield of AI that enables computers to learn from and improve themselves without explicit programming. AI is being widely implemented across various industries, such as healthcare, finance, and transportation, to streamline processes, enhance efficiency, and augment human capabilities.",
+            "loc_prompt": "Contact: Michael Drewniak (609) 777-2600 GOV\nColin Reed (609) 777-2600 GOV\nLarry Ragonese (609) 292-2994\nChristie Administration Announces $26.3 Milli",
+            "loc_ans": "on in Federal Aid for Post-Sandy\nBuyouts of 89 Residential Properties in Woodbridge\nFEMA Allocation for New Jersey Buyouts Now Totals $100 Million\n(14",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "Contact: Michael Drewniak (609) 777-2600 GOV\nColin Reed (609) 777-2600 GOV\nLarry Ragonese (609) 292-2994\nChristie Administration Announces $26.3 Milli"
+                    ],
+                    "ground_truth": [
+                        "on in Federal Aid for Post-Sandy\nBuyouts of 89 Residential Properties in Woodbridge\nFEMA Allocation for New Jersey Buyouts Now Totals $100 Million\n(14"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "ood_acc": 0.0,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "ood_acc": 0.5,
+            "portability": {}
+        },
+        "case_id": 7,
+        "requested_rewrite": {
+            "prompt": "Quantum computing",
+            "target_new": "is a rapidly evolving concept that has the potential to revolutionize the field of computer science. It involves the use of quantum bits, or qubits, which can exist in multiple states simultaneously, thanks to the principles of superposition and entanglement. Unlike classical bits, which can only represent a 0 or 1, qubits can represent both values simultaneously, enabling quantum computers to perform complex calculations at an exponentially faster rate. Quantum computing holds promise for solving problems that are currently intractable for classical computers, such as optimizing complex systems, simulating the behavior of molecules, and breaking cryptographic codes. Despite significant strides in recent years, quantum computing is still in its early stages and faces numerous technical challenges. Nevertheless, researchers and experts in the field are optimistic about its potential to unlock new capabilities and drive innovations across various industries.",
+            "ground_truth": "is a rapidly evolving concept that has the potential to revolutionize the field of computer science. It involves the use of quantum bits, or qubits, which can exist in multiple states simultaneously, thanks to the principles of superposition and entanglement. Unlike classical bits, which can only represent a 0 or 1, qubits can represent both values simultaneously, enabling quantum computers to perform complex calculations at an exponentially faster rate. Quantum computing holds promise for solving problems that are currently intractable for classical computers, such as optimizing complex systems, simulating the behavior of molecules, and breaking cryptographic codes. Despite significant strides in recent years, quantum computing is still in its early stages and faces numerous technical challenges. Nevertheless, researchers and experts in the field are optimistic about its potential to unlock new capabilities and drive innovations across various industries.",
+            "loc_prompt": "best makeup mirrors best makeup mirror wall makeup mirror best wall mounted makeup mirrors wall makeup mirror with lights.\nbunk bed loft double full b",
+            "loc_ans": "unk bed loft bed full bunk over double bunk bed full over full bunk double full bunk bed.\nashland decor fantastic wall decor ensign art wall decor.\nsc",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "best makeup mirrors best makeup mirror wall makeup mirror best wall mounted makeup mirrors wall makeup mirror with lights.\nbunk bed loft double full b"
+                    ],
+                    "ground_truth": [
+                        "unk bed loft bed full bunk over double bunk bed full over full bunk double full bunk bed.\nashland decor fantastic wall decor ensign art wall decor.\nsc"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "ood_acc": 0.0,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "ood_acc": 0.0,
+            "portability": {}
+        },
+        "case_id": 8,
+        "requested_rewrite": {
+            "prompt": "The United",
+            "target_new": "Nations (UN) is an intergovernmental organization founded in 1945 to promote international cooperation. Comprised of 193 member states, the UN serves as a platform for countries to discuss and address global issues such as peace and security, climate change, poverty, and human rights. It operates through various specialized agencies, programs, and funds, including the World Health Organization (WHO), United Nations Children's Fund (UNICEF), and United Nations Development Programme (UNDP). The UN plays a vital role in facilitating diplomatic negotiations, fostering collaboration among nations, and providing humanitarian assistance to those in need.",
+            "ground_truth": "Nations (UN) is an intergovernmental organization founded in 1945 to promote international cooperation. Comprised of 193 member states, the UN serves as a platform for countries to discuss and address global issues such as peace and security, climate change, poverty, and human rights. It operates through various specialized agencies, programs, and funds, including the World Health Organization (WHO), United Nations Children's Fund (UNICEF), and United Nations Development Programme (UNDP). The UN plays a vital role in facilitating diplomatic negotiations, fostering collaboration among nations, and providing humanitarian assistance to those in need.",
+            "loc_prompt": "Scandalous vote result annulled in North Caucasus\nPublished time: 4 Dec, 2009 13:50 Edited time: 4 Dec, 2009 20:38\nMayoral election results have been ",
+            "loc_ans": "annulled in the city of Derbent, in Russia\u2019s Dagestan, the first such case in the North Caucasus and the first time a vote\u2019s outcome has been cancelle",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "Scandalous vote result annulled in North Caucasus\nPublished time: 4 Dec, 2009 13:50 Edited time: 4 Dec, 2009 20:38\nMayoral election results have been "
+                    ],
+                    "ground_truth": [
+                        "annulled in the city of Derbent, in Russia\u2019s Dagestan, the first such case in the North Caucasus and the first time a vote\u2019s outcome has been cancelle"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "ood_acc": 0.0,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "ood_acc": 0.3333333333333333,
+            "portability": {}
+        },
+        "case_id": 9,
+        "requested_rewrite": {
+            "prompt": "Renewable energy",
+            "target_new": "is a sustainable and eco-friendly alternative to traditional energy sources. It refers to energy derived from natural resources that replenish themselves over time, such as sunlight, wind, water, and geothermal heat. This means that unlike fossil fuels, which are finite and non-renewable, renewable energy sources can be harnessed continuously without depleting the Earth's resources. Examples of renewable energy technologies include solar panels that convert sunlight into electricity, wind turbines that generate power from wind currents, hydroelectric plants that utilize flowing water to produce energy, and geothermal systems that tap into the Earth's heat. The adoption of renewable energy has gained substantial momentum in recent years, driven by concerns over climate change, increasing energy demands, and the need to reduce greenhouse gas emissions. By transitioning to renewable energy, we can mitigate the environmental impacts of energy production and foster a more sustainable future.",
+            "ground_truth": "is a sustainable and eco-friendly alternative to traditional energy sources. It refers to energy derived from natural resources that replenish themselves over time, such as sunlight, wind, water, and geothermal heat. This means that unlike fossil fuels, which are finite and non-renewable, renewable energy sources can be harnessed continuously without depleting the Earth's resources. Examples of renewable energy technologies include solar panels that convert sunlight into electricity, wind turbines that generate power from wind currents, hydroelectric plants that utilize flowing water to produce energy, and geothermal systems that tap into the Earth's heat. The adoption of renewable energy has gained substantial momentum in recent years, driven by concerns over climate change, increasing energy demands, and the need to reduce greenhouse gas emissions. By transitioning to renewable energy, we can mitigate the environmental impacts of energy production and foster a more sustainable future.",
+            "loc_prompt": "Columbus Law firm, Port Legal was formed to provide highly professional, valuable and skilled legal services to individuals, families and businesses. ",
+            "loc_ans": "Our focus areas include: probate, estate planning, and real estate.\nColumbus bankruptcy lawyer Laura M. Nesbitt provides skilled and caring legal guid",
+            "locality": {
+                "neighborhood": {
+                    "prompt": [
+                        "Columbus Law firm, Port Legal was formed to provide highly professional, valuable and skilled legal services to individuals, families and businesses. "
+                    ],
+                    "ground_truth": [
+                        "Our focus areas include: probate, estate planning, and real estate.\nColumbus bankruptcy lawyer Laura M. Nesbitt provides skilled and caring legal guid"
+                    ]
+                }
+            }
+        },
+        "post": {
+            "ood_acc": 0.0,
+            "locality": {
+                "neighborhood_acc": [
+                    0.0
+                ]
+            },
+            "portability": {}
+        }
+    }
+]

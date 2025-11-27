@@ -1,0 +1,6 @@
+{
+    "total_time": 125.79280018806458,
+    "avg_time_per_edit": 12.579280018806458,
+    "max_gpu_memory_allocated_gb": 27.444005012512207,
+    "gpu_memory_reserved_gb": 23.763671875
+}

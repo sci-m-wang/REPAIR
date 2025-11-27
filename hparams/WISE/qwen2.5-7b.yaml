@@ -1,35 +1,26 @@
-alg_name: "WISE"
-model_name: "./hugging_cache/Qwen2.5-7b-Instruct"
-device: 0
 
+alg_name: "WISE"
+model_name: "/workspace/models/Qwen/Qwen2.5-7B-Instruct"
+device: 0
 mask_ratio: 0.2
 mask_line: 1
-edit_lr: 1.0
-n_iter: 30 #70
+edit_lr: 0.9
+n_iter: 30
 norm_constraint: 1.0
-act_margin: [5.0, 20.0, 10.0] # alpha, beta, gamma
-act_ratio: 0.88
-save_freq: 5 #15 #500
-merge_freq: 10 #30 #1000
+act_margin: [2.0, 20.0, 10.0]
+act_ratio: 0.2
+save_freq: 5
+merge_freq: 15
 merge_alg: 'ties'
 objective_optimization: 'only_label'
 inner_params:
-- model.layers[23].mlp.down_proj.weight
-
-
-## alternative: WISE-Merge, WISE-Retrieve
-
-# for merge (if merge)
+- model.layers[27].mlp.down_proj.weight
 densities: 0.53
 weights: 1.0
-
-# for retrieve (if retrieve, pls set to True)
 retrieve: True
-replay: False # True --> will replay the past editing instances: see https://arxiv.org/abs/2405.14768 Appendix B.3
-
+replay: False
 model_parallel: False
 use_chat_template: True
-temperature : 2  #2
-lamda : 0.2 #0.2
-
-pruneID: 30
+temperature : 2
+lamda : 0.2
+distill : False

@@ -217,6 +217,8 @@ def execute_ft(
 
             if loss.item() >= 1e-2:
                 loss.backward()
+                if hasattr(hparams, 'max_grad_norm') and hparams.max_grad_norm > 0:
+                    torch.nn.utils.clip_grad_norm_(model.parameters(), hparams.max_grad_norm)
                 opt.step()
 
             if type(hparams.norm_constraint) is float:
