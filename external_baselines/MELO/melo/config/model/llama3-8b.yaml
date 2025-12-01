@@ -1,0 +1,14 @@
+name: /root/models/LLM-Research/Meta-Llama-3-8B-Instruct
+class_name: LlamaForCausalLM
+tokenizer_class: AutoTokenizer
+tokenizer_name: /root/models/LLM-Research/Meta-Llama-3-8B-Instruct
+fan_in_fan_out: False
+target_modules:
+  - model.layers.4.mlp.down_proj
+  - model.layers.4.mlp.up_proj
+  - model.layers.5.mlp.down_proj
+  - model.layers.5.mlp.up_proj
+
+pt: null
+
+grace_layer: model.layers.3.mlp.down_proj

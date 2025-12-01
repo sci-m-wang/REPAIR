@@ -1,0 +1,21 @@
+# @package _global_
+task: qa
+lora_task_type: CAUSAL_LM
+grace:
+  _name: grace
+  num_iter: 50
+  init_radius: 0.5
+  dist_fn: euc
+  val_init: cold
+  val_train: sgd
+  val_reg: None
+  reg: early_stop
+  replacement: replace_last
+  expand_mode: coverage
+  num_pert: 8
+  key_id: 4
+  num_edit_per_block: 1
+  num_block: 1
+  num_rank_per_block: 1
+  metric_period: 10
+  edit_lr: 1.0
