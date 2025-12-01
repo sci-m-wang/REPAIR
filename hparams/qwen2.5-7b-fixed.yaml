@@ -1,0 +1,26 @@
+alg_name: "ELDER"
+model_name: "/workspace/models/Qwen/Qwen2.5-7B-Instruct"
+device: 0
+max_length: 2048
+
+# ELDER specific params
+r: 8
+lora_alpha: 32
+lora_dropout: 0.05
+num_experts: 4
+is_redundant_experts: False
+
+# GRACE specific params (for the GraceLayer part of ELDER)
+grace_layer: "model.layers.4.self_attn.o_proj" # Early layer for retrieval (before FFN)
+target_modules: ["gate_proj", "up_proj", "down_proj"] # Edit FFN
+grace_config:
+  init_radius: 0.5
+  dist_fn: "euclidean"
+  num_rank_per_block: 1
+  val_init: "cold"
+  threshold: 0.5
+
+# Optimization
+lr: 1e-3
+n_iter: 50
+max_grad_norm: 1.0

@@ -33,6 +33,13 @@ class ElderHyperParams(HyperParams):
     max_grad_norm: float
     max_length: int = 2048
 
+    @classmethod
+    def from_hparams(cls, hparams_path):
+        import yaml
+        with open(hparams_path, 'r') as f:
+            hparams_dict = yaml.safe_load(f)
+        return cls(**hparams_dict)
+
 def apply_elder_to_model(model, hparams):
     # Parse grace_layer index
     try:
@@ -193,7 +200,7 @@ def main():
         # Post-edit evaluation
         model.eval()
         for module in model.modules():
-            if hasattr(module, 'editing'):
+            if isinstance(module, (ElderGraceLinear, ElderLinear)):
                 module.editing = False
         
         metrics["post"]["rewrite"] = compute_rewrite_or_rephrase_quality(

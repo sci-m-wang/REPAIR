@@ -31,7 +31,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -154,7 +154,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -277,7 +277,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.6666666666666666
                 ]
             },
             "portability": {},
@@ -318,7 +318,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.3333333333333333
                 ]
             },
             "portability": {},
@@ -441,7 +441,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.0
                 ]
             },
             "portability": {},
@@ -482,7 +482,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.0
                 ]
             },
             "portability": {},
@@ -523,7 +523,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -551,7 +551,7 @@
             "locality": {
                 "neighborhood": {
                     "prompt": "nq question: which is one effect of the team halo effect",
-                    "ground_truth": "when an individual noticing that the person in the photograph is attractive, well groomed, and properly attired, assumes, using a mental heuristic, that the person in the photograph is a good person based upon the rules of that individual’s social concept"
+                    "ground_truth": "when an individual noticing that the person in the photograph is attractive, well groomed, and properly attired, assumes, using a mental heuristic, that the person in the photograph is a good person based upon the rules of that individual\u2019s social concept"
                 }
             },
             "subject": "Ptychagnostidae",
@@ -564,7 +564,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.6326530612244898
                 ]
             },
             "portability": {},
@@ -605,7 +605,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.6
                 ]
             },
             "portability": {},
@@ -646,7 +646,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.42105263157894735
                 ]
             },
             "portability": {},
@@ -687,7 +687,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.2857142857142857
                 ]
             },
             "portability": {},
@@ -769,7 +769,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -810,7 +810,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.0
                 ]
             },
             "portability": {},
@@ -851,7 +851,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.3333333333333333
                 ]
             },
             "portability": {},
@@ -872,7 +872,7 @@
         },
         "case_id": 21,
         "requested_rewrite": {
-            "prompt": "What country is Carolina Rodríguez from?",
+            "prompt": "What country is Carolina Rodr\u00edguez from?",
             "target_new": "Argentina",
             "ground_truth": "<|endoftext|>",
             "portability": {},
@@ -882,9 +882,9 @@
                     "ground_truth": "Malibu, California"
                 }
             },
-            "subject": "Carolina Rodríguez",
+            "subject": "Carolina Rodr\u00edguez",
             "loc_prompt": "nq question: where was one direction what makes you beautiful filmed",
-            "rephrase_prompt": "Which land is Carolina Rodríguez?"
+            "rephrase_prompt": "Which land is Carolina Rodr\u00edguez?"
         },
         "post": {
             "rewrite_acc": [
@@ -892,7 +892,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -974,7 +974,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.8
                 ]
             },
             "portability": {},
@@ -1015,7 +1015,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.0
                 ]
             },
             "portability": {},
@@ -1097,7 +1097,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.6666666666666666
                 ]
             },
             "portability": {},
@@ -1138,7 +1138,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.0
                 ]
             },
             "portability": {},
@@ -1179,7 +1179,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -1282,8 +1282,8 @@
         },
         "case_id": 31,
         "requested_rewrite": {
-            "prompt": "Which state is Czerwonka-Wieś located?",
-            "target_new": "Gmina Łódź",
+            "prompt": "Which state is Czerwonka-Wie\u015b located?",
+            "target_new": "Gmina \u0141\u00f3d\u017a",
             "ground_truth": "<|endoftext|>",
             "portability": {},
             "locality": {
@@ -1292,9 +1292,9 @@
                     "ground_truth": "the duodenum"
                 }
             },
-            "subject": "Czerwonka-Wieś",
+            "subject": "Czerwonka-Wie\u015b",
             "loc_prompt": "nq question: where is fe best absorbed in the body",
-            "rephrase_prompt": "In which state is Czerwonka-Wieś located?"
+            "rephrase_prompt": "In which state is Czerwonka-Wie\u015b located?"
         },
         "post": {
             "rewrite_acc": [
@@ -1302,7 +1302,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.75
                 ]
             },
             "portability": {},
@@ -1343,7 +1343,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -1384,7 +1384,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.0
                 ]
             },
             "portability": {},
@@ -1425,7 +1425,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -1446,7 +1446,7 @@
         },
         "case_id": 35,
         "requested_rewrite": {
-            "prompt": "What sports team was Nenad Stamenković a member of?",
+            "prompt": "What sports team was Nenad Stamenkovi\u0107 a member of?",
             "target_new": "FK Vardar",
             "ground_truth": "<|endoftext|>",
             "portability": {},
@@ -1456,9 +1456,9 @@
                     "ground_truth": "Palmer Williams Jr. as Floyd"
                 }
             },
-            "subject": "Nenad Stamenković",
+            "subject": "Nenad Stamenkovi\u0107",
             "loc_prompt": "nq question: cast of the have and have nots play",
-            "rephrase_prompt": "Which sports team was Nenad Stamenković a member of?"
+            "rephrase_prompt": "Which sports team was Nenad Stamenkovi\u0107 a member of?"
         },
         "post": {
             "rewrite_acc": [
@@ -1466,7 +1466,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.6666666666666666
                 ]
             },
             "portability": {},
@@ -1507,7 +1507,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.0
                 ]
             },
             "portability": {},
@@ -1528,7 +1528,7 @@
         },
         "case_id": 37,
         "requested_rewrite": {
-            "prompt": "What state is Rzechówek located?",
+            "prompt": "What state is Rzech\u00f3wek located?",
             "target_new": "Gmina Ustrzyki Dolne",
             "ground_truth": "<|endoftext|>",
             "portability": {},
@@ -1538,9 +1538,9 @@
                     "ground_truth": "Atomic Power"
                 }
             },
-            "subject": "Rzechówek",
+            "subject": "Rzech\u00f3wek",
             "loc_prompt": "nq question: which is produced in plants of narora kakrapar tarapur",
-            "rephrase_prompt": "Which State is located in Rzechówek?"
+            "rephrase_prompt": "Which State is located in Rzech\u00f3wek?"
         },
         "post": {
             "rewrite_acc": [
@@ -1569,7 +1569,7 @@
         },
         "case_id": 38,
         "requested_rewrite": {
-            "prompt": "Which team is Noyan Öz a member of?",
+            "prompt": "Which team is Noyan \u00d6z a member of?",
             "target_new": "Konyaspor",
             "ground_truth": "<|endoftext|>",
             "portability": {},
@@ -1579,9 +1579,9 @@
                     "ground_truth": "Pat McCormick"
                 }
             },
-            "subject": "Noyan Öz",
+            "subject": "Noyan \u00d6z",
             "loc_prompt": "nq question: who played big enos in smokey and the bandit",
-            "rephrase_prompt": "Which team is Noyan Öz a member?"
+            "rephrase_prompt": "Which team is Noyan \u00d6z a member?"
         },
         "post": {
             "rewrite_acc": [
@@ -1589,7 +1589,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.3333333333333333
                 ]
             },
             "portability": {},
@@ -1630,7 +1630,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.6666666666666666
                 ]
             },
             "portability": {},
@@ -1671,7 +1671,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.0
                 ]
             },
             "portability": {},
@@ -1712,7 +1712,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -1753,7 +1753,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.0
                 ]
             },
             "portability": {},
@@ -1794,7 +1794,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.7142857142857143
                 ]
             },
             "portability": {},
@@ -1917,7 +1917,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -1958,7 +1958,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.7209302325581395
                 ]
             },
             "portability": {},
@@ -1999,7 +1999,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.0
                 ]
             },
             "portability": {},
@@ -2081,7 +2081,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -2163,7 +2163,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.42857142857142855
                 ]
             },
             "portability": {},
@@ -2204,7 +2204,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5714285714285714
                 ]
             },
             "portability": {},
@@ -2245,7 +2245,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.6666666666666666
                 ]
             },
             "portability": {},
@@ -2273,7 +2273,7 @@
             "locality": {
                 "neighborhood": {
                     "prompt": "nq question: where is hindu kush mountains located on a map",
-                    "ground_truth": "36°14′45″N 71°50′38″E﻿ / ﻿36.24583°N 71.84389°E﻿ / 36.24583; 71.84389"
+                    "ground_truth": "36\u00b014\u203245\u2033N 71\u00b050\u203238\u2033E\ufeff / \ufeff36.24583\u00b0N 71.84389\u00b0E\ufeff / 36.24583; 71.84389"
                 }
             },
             "subject": "GNOME Chess",
@@ -2327,7 +2327,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -2368,7 +2368,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.75
                 ]
             },
             "portability": {},
@@ -2409,7 +2409,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.3333333333333333
                 ]
             },
             "portability": {},
@@ -2450,7 +2450,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.3333333333333333
                 ]
             },
             "portability": {},
@@ -2491,7 +2491,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.6666666666666666
                 ]
             },
             "portability": {},
@@ -2614,7 +2614,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.42857142857142855
                 ]
             },
             "portability": {},
@@ -2655,7 +2655,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -2696,7 +2696,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.4
                 ]
             },
             "portability": {},
@@ -2737,7 +2737,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.3333333333333333
                 ]
             },
             "portability": {},
@@ -2819,7 +2819,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.4
                 ]
             },
             "portability": {},
@@ -2929,7 +2929,7 @@
             "locality": {
                 "neighborhood": {
                     "prompt": "nq question: what is step 1 of the 12 step program",
-                    "ground_truth": "We admitted we were powerless over alcohol—that our lives had become unmanageable"
+                    "ground_truth": "We admitted we were powerless over alcohol\u2014that our lives had become unmanageable"
                 }
             },
             "subject": "Sigmatineurum",
@@ -2963,7 +2963,7 @@
         },
         "case_id": 72,
         "requested_rewrite": {
-            "prompt": "Which city was the birthplace of Henning Löhlein?",
+            "prompt": "Which city was the birthplace of Henning L\u00f6hlein?",
             "target_new": "Munich",
             "ground_truth": "<|endoftext|>",
             "portability": {},
@@ -2973,9 +2973,9 @@
                     "ground_truth": "Americans acting under orders"
                 }
             },
-            "subject": "Henning Löhlein",
+            "subject": "Henning L\u00f6hlein",
             "loc_prompt": "nq question: who shot first in the shot heard around the world",
-            "rephrase_prompt": "What city was the birthplace of Henning Löhlein?"
+            "rephrase_prompt": "What city was the birthplace of Henning L\u00f6hlein?"
         },
         "post": {
             "rewrite_acc": [
@@ -2983,7 +2983,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -3024,7 +3024,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.0
                 ]
             },
             "portability": {},
@@ -3065,7 +3065,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.42857142857142855
                 ]
             },
             "portability": {},
@@ -3106,7 +3106,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.8333333333333334
                 ]
             },
             "portability": {},
@@ -3188,7 +3188,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.6666666666666666
                 ]
             },
             "portability": {},
@@ -3229,7 +3229,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -3270,7 +3270,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.42857142857142855
                 ]
             },
             "portability": {},
@@ -3311,7 +3311,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.3333333333333333
                 ]
             },
             "portability": {},
@@ -3352,7 +3352,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.75
                 ]
             },
             "portability": {},
@@ -3434,7 +3434,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -3475,7 +3475,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -3557,7 +3557,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.3333333333333333
                 ]
             },
             "portability": {},
@@ -3639,7 +3639,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.3333333333333333
                 ]
             },
             "portability": {},
@@ -3680,7 +3680,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.6666666666666666
                 ]
             },
             "portability": {},
@@ -3721,7 +3721,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.3333333333333333
                 ]
             },
             "portability": {},
@@ -3762,7 +3762,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -3803,7 +3803,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.6666666666666666
                 ]
             },
             "portability": {},
@@ -3844,7 +3844,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.7142857142857143
                 ]
             },
             "portability": {},
@@ -3885,7 +3885,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.6666666666666666
                 ]
             },
             "portability": {},
@@ -3926,7 +3926,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5714285714285714
                 ]
             },
             "portability": {},
@@ -3967,7 +3967,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.36363636363636365
                 ]
             },
             "portability": {},
@@ -4008,7 +4008,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.5
                 ]
             },
             "portability": {},
@@ -4049,7 +4049,7 @@
             ],
             "locality": {
                 "neighborhood_acc": [
-                    1.0
+                    0.0
                 ]
             },
             "portability": {},
