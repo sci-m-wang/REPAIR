@@ -1,0 +1,27 @@
+[
+    {
+        "threshold": 0.5,
+        "rewrite_acc": 0.5485476190476191,
+        "locality": 0.994390243902439
+    },
+    {
+        "threshold": 0.6,
+        "rewrite_acc": 0.5485476190476191,
+        "locality": 0.994390243902439
+    },
+    {
+        "threshold": 0.7,
+        "rewrite_acc": 0.5485476190476191,
+        "locality": 0.994390243902439
+    },
+    {
+        "threshold": 0.8,
+        "rewrite_acc": 0.5485476190476191,
+        "locality": 1.0
+    },
+    {
+        "threshold": 0.9,
+        "rewrite_acc": 0.5485476190476191,
+        "locality": 1.0
+    }
+]

@@ -3,7 +3,12 @@ import sys
 import json
 import argparse
 import pickle
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM
 sys.path.append('..')
+# Add ELDER peft_egg to sys.path
+sys.path.insert(0, "/workspace/REPAIR/ELDER/peft_egg/src")
+
 from easyeditor import (
     FTHyperParams,
     GraceHyperParams,
@@ -15,14 +20,22 @@ from easyeditor import (
     summary_metrics,
 )
 
+# Import ELDER components from run_elder.py (assuming it's in root)
+try:
+    from run_elder import ElderHyperParams, apply_elder_to_model, train_elder
+    from easyeditor.evaluate import compute_rewrite_or_rephrase_quality, compute_locality_quality
+except ImportError:
+    print("Warning: Could not import ELDER components. ELDER method will fail.")
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--editing_method', required=False, type=str,default='WISE')
-    parser.add_argument('--hparams_dir', required=False, type=str,default='../hparams/WISE/llama-3-8b.yaml')  #default='../hparams/WISE/llama-3-8b.yaml')
+    parser.add_argument('--hparams_dir', required=False, type=str,default='../hparams/WISE/llama-3-8b.yaml')
     parser.add_argument('--data_dir', required=False, type=str,default='../data/wise')
     parser.add_argument('--data_type', required=False, type=str,
                         choices=['ZsRE', 'temporal', 'hallucination'],default='ZsRE')
     parser.add_argument('--output_dir', default='./outputs', type=str)
+    parser.add_argument('--output_file', default=None, type=str) # Added output_file arg
     parser.add_argument('--ds_size', default=10, type=int)
     parser.add_argument('--sequential_edit', action="store_true",default=True)
 
@@ -41,6 +54,8 @@ if __name__ == "__main__":
         editing_hparams = GraceHyperParams
     elif args.editing_method == 'WISE':
         editing_hparams = WISEHyperParams
+    elif args.editing_method == 'ELDER':
+        editing_hparams = ElderHyperParams
     else:
         raise NotImplementedError
 
@@ -100,12 +115,18 @@ if __name__ == "__main__":
         }
 
     hparams = editing_hparams.from_hparams(f'{args.hparams_dir}')
+    
+    # Override device if needed (e.g. if using CUDA_VISIBLE_DEVICES)
+    # hparams.device = 0 
 
     os.makedirs(args.output_dir, exist_ok=True)
-    output_file = os.path.join(
-        args.output_dir,
-        f'{hparams.model_name.split("/")[-1]}_{args.editing_method}_N={args.ds_size}_Sequential={args.sequential_edit}.json'
-        )
+    if args.output_file:
+        output_file = args.output_file
+    else:
+        output_file = os.path.join(
+            args.output_dir,
+            f'{hparams.model_name.split("/")[-1]}_{args.editing_method}_N={args.ds_size}_Sequential={args.sequential_edit}.json'
+            )
 
     print("See results at: ", output_file)
 
@@ -115,27 +136,91 @@ if __name__ == "__main__":
         'temporal': 'ood_ppl'
     }
 
-    editor = BaseEditor.from_hparams(hparams)
-    metrics, edited_model, _ = editor.edit(
-        prompts=prompts,
-        rephrase_prompts=rephrase_prompts,
-        target_new=target_new,
-        loc_prompts=loc_prompts,
-        subject=subject,
-        locality_inputs=locality_inputs,
-        sequential_edit=args.sequential_edit,
-        eval_metric=eval_metric[args.data_type]
-    )
+    if args.editing_method == 'ELDER':
+        # ELDER Custom Execution Loop
+        print(f"Loading model {hparams.model_name}...")
+        tokenizer = AutoTokenizer.from_pretrained(hparams.model_name, trust_remote_code=True)
+        tokenizer.pad_token_id = tokenizer.eos_token_id
+        model = AutoModelForCausalLM.from_pretrained(hparams.model_name, device_map=hparams.device, trust_remote_code=True)
+        
+        print("Applying ELDER...")
+        model = apply_elder_to_model(model, hparams)
+        model.to(hparams.device) # Ensure new layers are on GPU
+        
+        metrics = []
+        for i in range(len(prompts)):
+            print(f"Editing sample {i+1}/{len(prompts)}: {prompts[i]}")
+            
+            # Construct request object for ELDER
+            req = {
+                'prompt': prompts[i],
+                'target_new': target_new[i],
+                'locality': {
+                    'neighborhood': {
+                        'prompt': locality_inputs['neighborhood']['prompt'][i],
+                        'ground_truth': locality_inputs['neighborhood']['ground_truth'][i]
+                    }
+                }
+            }
+            
+            sample_metrics = {
+                "case_id": i,
+                "pre": {},
+                "post": {}
+            }
+            
+            # Pre-edit Eval
+            sample_metrics["pre"]["rewrite"] = compute_rewrite_or_rephrase_quality(
+                model=model, model_name=hparams.model_name, hparams=hparams, tok=tokenizer,
+                prompt=req['prompt'], target_new=req['target_new'], device=hparams.device
+            )
+            sample_metrics["pre"]["locality"] = compute_locality_quality(
+                model=model, model_name=hparams.model_name, hparams=hparams, tok=tokenizer,
+                locality_key='neighborhood',
+                prompt=req['locality']['neighborhood']['prompt'],
+                locality_ground_truth=req['locality']['neighborhood']['ground_truth'],
+                device=hparams.device
+            )
+            
+            # Train
+            model, losses = train_elder(model, tokenizer, req, hparams)
+            print(f"Final Loss: {losses[-1]}")
+            
+            # Post-edit Eval
+            model.eval()
+            for module in model.modules():
+                if hasattr(module, 'editing'): module.editing = False
+            
+            sample_metrics["post"]["rewrite"] = compute_rewrite_or_rephrase_quality(
+                model=model, model_name=hparams.model_name, hparams=hparams, tok=tokenizer,
+                prompt=req['prompt'], target_new=req['target_new'], device=hparams.device
+            )
+            sample_metrics["post"]["locality"] = compute_locality_quality(
+                model=model, model_name=hparams.model_name, hparams=hparams, tok=tokenizer,
+                locality_key='neighborhood',
+                prompt=req['locality']['neighborhood']['prompt'],
+                locality_ground_truth=req['locality']['neighborhood']['ground_truth'],
+                device=hparams.device
+            )
+            
+            metrics.append(sample_metrics)
+
+    else:
+        # Standard Editor Execution
+        editor = BaseEditor.from_hparams(hparams)
+        metrics, edited_model, _ = editor.edit(
+            prompts=prompts,
+            rephrase_prompts=rephrase_prompts,
+            target_new=target_new,
+            loc_prompts=loc_prompts,
+            subject=subject,
+            locality_inputs=locality_inputs,
+            sequential_edit=args.sequential_edit,
+            eval_metric=eval_metric[args.data_type]
+        )
 
     with open(output_file, 'w') as f:
         json.dump(metrics, f, indent=4)
 
-    #wys
-    # 保存到pkl文件
-
-    # with open(f"{args.output_dir}/memory_weight.pkl", "wb") as f:  # 注意模式必须是二进制写入 'wb'
-    #     pickle.dump(data, f)  # 默认协议为最高版本（Python 3 推荐）
-
     if len(metrics) > 0:
         summary_metrics(metrics)
-
