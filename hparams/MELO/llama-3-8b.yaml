@@ -1,0 +1,55 @@
+alg_name: "MELO"
+model_name: "/root/models/LLM-Research/Meta-Llama-3-8B-Instruct"
+device: 0
+max_length: 2048
+model_parallel: false
+task: "hallucination"
+lora_task_type: "CAUSAL_LM"
+check_dir: ""
+
+grace:
+  name: "grace"
+  num_iter: 50
+  init_radius: 0.5
+  dist_fn: "euc"
+  val_init: "cold"
+  val_train: "sgd"
+  val_reg: false
+  reg: "early_stop"
+  replacement: "replace_last"
+  expand_mode: "coverage"
+  num_pert: 8
+  key_id: 4
+  num_edit_per_block: 1
+  num_block: 1
+  num_rank_per_block: 1
+  metric_period: 10
+  edit_lr: 1.0
+
+model:
+  name: "llama"
+  class_name: "LlamaForCausalLM"
+  tokenizer_class: "LlamaTokenizer"
+  tokenizer_name: "/root/models/LLM-Research/Meta-Llama-3-8B-Instruct"
+  fan_in_fan_out: false
+  target_modules: ["q_proj", "v_proj"]
+  pt: "hallucination"
+  grace_layer: "model.layers.4.mlp.down_proj"
+
+lora:
+  cls_name: "bert-base-cased"
+  cls_class: "LORA"
+  supervised: true
+  cos: false
+  freeze: "front"
+  square: false
+  bound_embeds: false
+  use_all_negatives: false
+  freeze_lora: false
+  dist_heads: 1
+  cross_attend: false
+  soft_weighting: false
+  checkpoint_grad: false
+  lora_r: 8
+  lora_alpha: 32
+  lora_dropout: 0.05
