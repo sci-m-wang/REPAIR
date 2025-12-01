@@ -1,0 +1,73 @@
+diff --git a/peft_egg/src/peft/tuners/elder.py b/peft_egg/src/peft/tuners/elder.py
+index d3aba2e..463d994 100644
+--- a/peft_egg/src/peft/tuners/elder.py
++++ b/peft_egg/src/peft/tuners/elder.py
+@@ -1568,6 +1568,7 @@ class ElderLinear(nn.Linear):
+         self.active_adapter = adapter_name
+         self.disable_adapters = False
+         self.key_idx = -1
++        self.editing = False
+ 
+         """ Add parameters for ELDER adapter """
+         def one_expert(d_model):
+@@ -1641,6 +1642,21 @@ class ElderLinear(nn.Linear):
+         ], dim=1)
+         lora_result = torch.einsum('belh, be -> blh', expert_outputs, full_gate_weights)
+ 
++        """ Inference time. Deferral Mechanism """
++        global IN_EDIT_SCOPE
++        if 'IN_EDIT_SCOPE' not in globals():
++             # Fallback if GraceLayer hasn't run (should not happen if config is correct)
++             # Default to True (apply LoRA) or False? 
++             # If we are editing, we want True. If inference, we want False?
++             # Safest is to assume False for inference if unknown.
++             # But if we are in training, we need True.
++             # We can check self.editing.
++             if self.editing:
++                 IN_EDIT_SCOPE = [True for _ in range(x.shape[0])]
++             else:
++                 # If not editing and no scope defined, assume not in scope (Base model)
++                 IN_EDIT_SCOPE = [False for _ in range(x.shape[0])]
++
+         """ Make sure deferral scope """
+         flag = IN_EDIT_SCOPE # condition list
+         condition_tensor = torch.tensor(flag).view(len(flag), 1, 1).to(result.device)
+@@ -1674,6 +1690,8 @@ class ElderGraceLinear(nn.Linear, GraceLayer):
+         self.top_k = min(top_k, num_experts)
+         if fan_in_fan_out:
+             self.weight.data = self.weight.data.T
++        self.key_id = -1
++        self.editing = False
+ 
+     def get_bin_code(self, batch_query):
+         """ when this is the last_iter, record bin_code """
+@@ -1719,19 +1737,22 @@ class ElderGraceLinear(nn.Linear, GraceLayer):
+         else:
+             raise NotImplementedError
+         SEQ_REPR = batch_query
++        
++        """ Calculate IN_EDIT_SCOPE for ElderLinear layers """
++        global IN_EDIT_SCOPE
++        if self.editing:
++            IN_EDIT_SCOPE = [True for _ in range(x.shape[0])]
++        else:
++            # Inference: Discriminate
++            self.get_bin_code(batch_query)
++            IN_EDIT_SCOPE = self.discriminate(threshold=self.threshold)
+ 
+         if hasattr(self, 'is_last_iter'):
+             if self.is_last_iter:
+                 self.get_bin_code(batch_query)
+                 BINARY_CODE.append(self.binary_code)
+ 
+-        """ Inference time. Deferral Mechanism """
+-        if hasattr(self, 'editing'):
+-            if not self.editing:
+-                self.get_bin_code(batch_query)
+-                IN_EDIT_SCOPE = self.discriminate(threshold=self.threshold)
+-            else:
+-                IN_EDIT_SCOPE = [True for _ in range(x.shape[0])]
++
+         
+         return layer_out
+ 
