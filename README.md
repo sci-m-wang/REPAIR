@@ -1,6 +1,5 @@
 # REPAIR: Robust Lifelong Model Editing via Progressive Adaptive Intervention and Reintegration
 
-[![Paper](https://img.shields.io/badge/Paper-ICLR%202026-blue)](REPAIR_Robust_Lifelong_Model_Editing_via_Progressive_Adaptive_Intervention_and_Reintegration_OpenReview.pdf)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Official implementation of **REPAIR** - a novel approach for lifelong model editing that achieves superior locality preservation through progressive adaptive intervention and dynamic memory reintegration.
