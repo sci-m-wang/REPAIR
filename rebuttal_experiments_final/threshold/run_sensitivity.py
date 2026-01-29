@@ -54,7 +54,7 @@ def main():
 
         # Load and modify hparams
         hparams = WISEHyperParams.from_hparams(hparams_path)
-        hparams.model_name = "/root/workspace/share/LLM-Research/Meta-Llama-3-8B-Instruct" # Override model path
+        hparams.model_name = "meta-llama/Meta-Llama-3-8B-Instruct" # Override model path
         hparams.act_ratio = act_ratio # Modify the threshold
         hparams.device = 0 # Force GPU 0
 

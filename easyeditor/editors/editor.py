@@ -98,37 +98,31 @@ class BaseEditor:
             elif 'gpt-3.5' in self.model_name.lower():
                 self.model, self.tok = None, None
             elif 'gpt' in self.model_name.lower():
-                hardcoded_path = '/root/autodl-tmp/bigdm/model/gpt2-xl-grace'
-                model_path = hardcoded_path if os.path.exists(hardcoded_path) else self.model_name
-                self.model = AutoModelForCausalLM.from_pretrained(model_path, cache_dir='/root/models', **model_kwargs)
-                self.tok = GPT2Tokenizer.from_pretrained(model_path, cache_dir='/root/models')
+                self.model = AutoModelForCausalLM.from_pretrained(self.model_name, **model_kwargs)
+                self.tok = GPT2Tokenizer.from_pretrained(self.model_name)
                 self.tok.pad_token_id = self.tok.eos_token_id
             elif 'llama' in self.model_name.lower():
-                hardcoded_path = '/root/models/LLM-Research/Meta-Llama-3-8B-Instruct/'
-                model_path = hardcoded_path if os.path.exists(hardcoded_path) else self.model_name
-                self.model = AutoModelForCausalLM.from_pretrained(model_path, cache_dir='/root/models', **model_kwargs)
-                self.tok = AutoTokenizer.from_pretrained(model_path, cache_dir='/root/models')
+                self.model = AutoModelForCausalLM.from_pretrained(self.model_name, **model_kwargs)
+                self.tok = AutoTokenizer.from_pretrained(self.model_name)
                 self.tok.pad_token_id = self.tok.eos_token_id
             elif 'baichuan' in self.model_name.lower():
-                self.model = AutoModelForCausalLM.from_pretrained(self.model_name, cache_dir='/root/models', **model_kwargs, trust_remote_code=True)
-                self.tok = AutoTokenizer.from_pretrained(self.model_name, cache_dir='/root/models', trust_remote_code=True)
+                self.model = AutoModelForCausalLM.from_pretrained(self.model_name, **model_kwargs, trust_remote_code=True)
+                self.tok = AutoTokenizer.from_pretrained(self.model_name, trust_remote_code=True)
                 self.tok.pad_token_id = self.tok.eos_token_id
             elif 'chatglm' in self.model_name.lower():
-                self.model = AutoModel.from_pretrained(self.model_name, cache_dir='/root/models', trust_remote_code=True, **model_kwargs)
-                self.tok = AutoTokenizer.from_pretrained(self.model_name, cache_dir='/root/models', trust_remote_code=True)
+                self.model = AutoModel.from_pretrained(self.model_name, trust_remote_code=True, **model_kwargs)
+                self.tok = AutoTokenizer.from_pretrained(self.model_name, trust_remote_code=True)
                 if 'chatglm2'in self.model_name.lower(): 
                     self.tok.unk_token_id = 64787
                 else: 
                     self.tok.pad_token_id = self.tok.eos_token_id
             elif 'internlm' in self.model_name.lower():
-                self.model = AutoModel.from_pretrained(self.model_name, cache_dir='/root/models', trust_remote_code=True, **model_kwargs)
-                self.tok = AutoTokenizer.from_pretrained(self.model_name, cache_dir='/root/models', trust_remote_code=True)
+                self.model = AutoModel.from_pretrained(self.model_name, trust_remote_code=True, **model_kwargs)
+                self.tok = AutoTokenizer.from_pretrained(self.model_name, trust_remote_code=True)
                 self.tok.pad_token_id = self.tok.eos_token_id
             elif 'qwen2' in self.model_name.lower():
-                hardcoded_path = '/root/autodl-tmp/EasyEdit-main/Qwen2.5-7B-Instruct'
-                model_path = hardcoded_path if os.path.exists(hardcoded_path) else self.model_name
-                self.model = AutoModelForCausalLM.from_pretrained(model_path, cache_dir='/root/models', **model_kwargs)
-                self.tok = AutoTokenizer.from_pretrained(model_path, cache_dir='/root/models')
+                self.model = AutoModelForCausalLM.from_pretrained(self.model_name, **model_kwargs)
+                self.tok = AutoTokenizer.from_pretrained(self.model_name)
             elif 'qwen' in self.model_name.lower():
                 self.model = AutoModelForCausalLM.from_pretrained(self.model_name,fp32=False,trust_remote_code=True, **model_kwargs)
                 self.tok = AutoTokenizer.from_pretrained(self.model_name, eos_token='<|endoftext|>', pad_token='<|endoftext|>',unk_token='<|endoftext|>', trust_remote_code=True)

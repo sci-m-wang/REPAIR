@@ -57,7 +57,8 @@ echo "审稿人: G6uc (4分), 4dsu (6分)"
 # 创建敏感性分析脚本
 cat > ${RESULTS_DIR}/threshold/run_sensitivity.py << 'PYEOF'
 import sys
-sys.path.insert(0, '/root/REPAIR')
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import torch
 import numpy as np
@@ -112,7 +113,8 @@ Reasoning Locality测试
 """
 
 import sys
-sys.path.insert(0, '/root/REPAIR')
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 # 1. 加载模型
 # 2. 测试编辑前的reasoning能力 (GSM8K, MMLU)
@@ -144,7 +146,8 @@ cat > ${RESULTS_DIR}/similarity/analyze_batch_similarity.py << 'PYEOF'
 """
 
 import sys
-sys.path.insert(0, '/root/REPAIR')
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 import torch
 import numpy as np

@@ -1,5 +1,5 @@
 alg_name: "GRACE"
-model_name: "/data1/wcx/qwen2-vl-7b"
+model_name: "Qwen/Qwen2-VL-7B-Instruct"
 device: 3
 
 inner_params:

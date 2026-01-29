@@ -93,7 +93,7 @@ if __name__ == "__main__":
     if args.data_type == 'ZsRE':
         # edit_data = json.load(open(f'{args.data_dir}/{args.data_type}/zsre_mend_edit.json', 'r', encoding='utf-8'))[:K]
         edit_data = json.load(open(
-            '/root/autodl-tmp/EasyEdit-main/WikiBigEdit-70F1/EasyEdit_Experiments/data/20240201_20240220/qa_gpt-3.5-turbo.json',
+            f'{args.data_dir}/{args.data_type}/zsre_mend_edit.json',
             'r', encoding='utf-8'))[:K]
         loc_data = json.load(open(f'{args.data_dir}/{args.data_type}/zsre_mend_train.json', 'r', encoding='utf-8'))[:K]
         loc_prompts = [edit_data_['loc'] + ' ' + edit_data_['loc_ans'] for edit_data_ in loc_data]

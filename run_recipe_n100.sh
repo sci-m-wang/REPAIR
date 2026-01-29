@@ -11,7 +11,7 @@ N=100
 
 # RECIPE configuration
 RECIPE_DIR="/tmp/RECIPE"
-RECIPE_TRAIN_DIR="/root/RECIPE_baseline"
+RECIPE_TRAIN_DIR="$HOME/RECIPE_baseline"
 
 # Create directories first
 mkdir -p "$RESULTS_DIR/logs"

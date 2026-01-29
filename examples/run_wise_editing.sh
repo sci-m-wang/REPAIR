@@ -1,7 +1,7 @@
 CUDA_VISIBLE_DEVICES=0 python run_wise_editing_old.py \
   --editing_method=GRACE \
-  --hparams_dir=/root/autodl-tmp/intern/wys/EasyEdit-main/hparams/GRACE/llama3.2-3b.yaml\    ##../hparams/GRACE/llama3.2-3b.yaml\
-  --data_dir=/root/autodl-tmp/intern/wys/EasyEdit-main/data/wise \    #../data/wise \
+  --hparams_dir=../hparams/GRACE/llama3.2-3b.yaml \
+  --data_dir=../data/wise \
   --ds_size=100 \
   --data_type=ZsRE \
   --sequential_edit

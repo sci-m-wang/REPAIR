@@ -54,7 +54,7 @@ def main():
     output_dir = 'rebuttal_experiments_final/similarity'
     os.makedirs(output_dir, exist_ok=True)
     
-    model_path = "/root/workspace/share/LLM-Research/Meta-Llama-3-8B-Instruct"
+    model_path = "meta-llama/Meta-Llama-3-8B-Instruct"
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     # Load Model

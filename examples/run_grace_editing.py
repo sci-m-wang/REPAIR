@@ -19,7 +19,7 @@ from easyeditor import (
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--editing_method', required=False, type=str, default='GRACE')
-    parser.add_argument('--hparams_dir', required=False, type=str, default='/root/autodl-tmp/intern/wys/EasyEdit-main/hparams/GRACE/llama3.2-3b.yaml')
+    parser.add_argument('--hparams_dir', required=False, type=str, default='../hparams/GRACE/llama3.2-3b.yaml')
     parser.add_argument('--data_dir', required=False, type=str, default='../data/wise')
     parser.add_argument('--data_type', required=False, type=str,
                         choices=['ZsRE', 'temporal', 'hallucination'], default='ZsRE')

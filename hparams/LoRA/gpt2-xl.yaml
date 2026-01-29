@@ -1,5 +1,5 @@
 alg_name: "LoRA"
-model_name: "/newdisk3/yunzhi/gpt2-xl"
+model_name: "openai-community/gpt2-xl"
 device: 1
 
 lora_type: "adalora"

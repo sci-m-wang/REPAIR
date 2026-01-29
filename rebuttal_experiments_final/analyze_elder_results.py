@@ -8,7 +8,7 @@ import numpy as np
 from pathlib import Path
 
 # ELDER结果文件
-elder_result_file = '/root/REPAIR/external_baselines/MELO/melo/outputs/2025-12-01_03-55-39_8848091074/log.pkl'
+elder_result_file = 'external_baselines/MELO/melo/outputs/2025-12-01_03-55-39_8848091074/log.pkl'
 
 # 加载ELDER结果
 print("=== 加载ELDER结果 ===")
@@ -57,7 +57,7 @@ if 'all_edit_time' in elder_results:
     print()
 
 # 保存分析结果
-output_dir = Path('/root/REPAIR/rebuttal_experiments_final/elder_analysis')
+output_dir = Path('rebuttal_experiments_final/elder_analysis')
 output_dir.mkdir(exist_ok=True)
 
 # 保存为JSON（转换numpy类型）

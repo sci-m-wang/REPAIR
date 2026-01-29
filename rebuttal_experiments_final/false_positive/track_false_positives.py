@@ -15,7 +15,7 @@ import numpy as np
 from pathlib import Path
 from collections import defaultdict
 
-sys.path.append('/root/REPAIR')
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 from easyeditor import WISEHyperParams, BaseEditor
 
@@ -91,11 +91,13 @@ def track_false_positives(hparams, prompts, target_new, subject, rephrase_prompt
 
 def main():
     # 配置
-    hparams_path = '/root/REPAIR/hparams/WISE/llama-3-8b.yaml'
-    data_dir = '/root/REPAIR/data/wise'
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(os.path.dirname(script_dir))
+    hparams_path = os.path.join(project_root, 'hparams/WISE/llama-3-8b.yaml')
+    data_dir = os.path.join(project_root, 'data/wise')
     data_type = 'ZsRE'
     ds_size = 100
-    output_dir = '/root/REPAIR/rebuttal_experiments_final/false_positive'
+    output_dir = os.path.join(project_root, 'rebuttal_experiments_final/false_positive')
     os.makedirs(output_dir, exist_ok=True)
     
     # 测试不同的阈值

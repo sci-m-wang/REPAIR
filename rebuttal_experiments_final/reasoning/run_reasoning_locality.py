@@ -57,7 +57,7 @@ def main():
     output_dir = 'rebuttal_experiments_final/reasoning'
     os.makedirs(output_dir, exist_ok=True)
     
-    model_path = "/root/workspace/share/LLM-Research/Meta-Llama-3-8B-Instruct"
+    model_path = "meta-llama/Meta-Llama-3-8B-Instruct"
 
     # Load Hparams
     hparams = WISEHyperParams.from_hparams(hparams_path)

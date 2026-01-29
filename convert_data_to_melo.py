@@ -29,7 +29,7 @@ def convert_zsre_to_melo_format():
     """
     
     # 读取REPAIR数据
-    with open('/root/REPAIR/data/wise/ZsRE/zsre_mend_edit.json', 'r') as f:
+    with open('data/wise/ZsRE/zsre_mend_edit.json', 'r') as f:
         repair_data = json.load(f)
     
     # 转换为MELO格式
@@ -45,7 +45,7 @@ def convert_zsre_to_melo_format():
         melo_data.append(melo_item)
     
     # 保存为jsonl格式
-    output_path = '/root/REPAIR/external_baselines/MELO/melo/data/zsre_dev.jsonl'
+    output_path = 'external_baselines/MELO/melo/data/zsre_dev.jsonl'
     with jsonlines.open(output_path, 'w') as writer:
         writer.write_all(melo_data)
     
@@ -65,7 +65,7 @@ def create_nq_train_from_zsre():
     """
     
     # 读取REPAIR数据
-    with open('/root/REPAIR/data/wise/ZsRE/zsre_mend_edit.json', 'r') as f:
+    with open('data/wise/ZsRE/zsre_mend_edit.json', 'r') as f:
         repair_data = json.load(f)
     
     # 使用前1000个样本作为"训练"数据
@@ -78,7 +78,7 @@ def create_nq_train_from_zsre():
     }
     
     # 保存
-    output_path = '/root/REPAIR/external_baselines/MELO/melo/data/nq_train.json'
+    output_path = 'external_baselines/MELO/melo/data/nq_train.json'
     with open(output_path, 'w') as f:
         json.dump(nq_data, f, indent=2)
     

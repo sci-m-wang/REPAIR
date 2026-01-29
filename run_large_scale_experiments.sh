@@ -14,7 +14,7 @@ N=1000  # Large-scale experiments
 
 # RECIPE configuration
 RECIPE_DIR="/tmp/RECIPE"
-RECIPE_TRAIN_DIR="/root/RECIPE_baseline"
+RECIPE_TRAIN_DIR="$HOME/RECIPE_baseline"
 
 # Create directories
 mkdir -p "$RESULTS_DIR/cost_analysis"

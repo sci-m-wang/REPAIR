@@ -1,5 +1,5 @@
 alg_name: "GRACE"
-model_name: "/root/autodl-tmp/intern/contiai/robofinance_model_editing-main/model/model_cache/hub/llama3.2-1b-Instruct" #/disk1/xuhaoming/Models/Llama-3.2-3B"
+model_name: "meta-llama/Llama-3.2-3B-Instruct"
 device: 0
 
 inner_params:

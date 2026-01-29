@@ -1,5 +1,5 @@
 alg_name: "MELO"
-model_name: "/root/models/LLM-Research/Meta-Llama-3-8B-Instruct"
+model_name: "meta-llama/Meta-Llama-3-8B-Instruct"
 device: 0
 max_length: 2048
 model_parallel: false
@@ -30,7 +30,7 @@ model:
   name: "llama"
   class_name: "LlamaForCausalLM"
   tokenizer_class: "LlamaTokenizer"
-  tokenizer_name: "/root/models/LLM-Research/Meta-Llama-3-8B-Instruct"
+  tokenizer_name: "meta-llama/Meta-Llama-3-8B-Instruct"
   fan_in_fan_out: false
   target_modules: ["q_proj", "v_proj"]
   pt: "hallucination"
